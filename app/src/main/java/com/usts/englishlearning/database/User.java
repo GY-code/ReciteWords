@@ -7,7 +7,7 @@ public class User extends LitePalSupport {
 
     // 唯一
     @Column(unique = true, defaultValue = "000000")
-    private int userId;
+    private String userId;
 
     // 头像
     private String userProfile;
@@ -22,11 +22,11 @@ public class User extends LitePalSupport {
     @Column(defaultValue = "0")
     private int userMoney;
 
-    public int getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 

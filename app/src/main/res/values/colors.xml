@@ -37,4 +37,34 @@
     <color name="colorBgWhite">#FFFFFF</color>
     <color name="colorBgWhiteN">#424242</color>
     <color name="colorBgLittleWhite">#FBFBFD</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FF7F00</color>
+
+    <!--    主色-->
+    <color name="primary_color">#0074E4</color>
+    <!--    渐变色-->
+    <color name="gradient_color1">#4FC5FF</color>
+    <color name="gradient_color2">#0074E4</color>
+    <!--    辅色-->
+    <color name="secondary_color">#4CCED5</color>
+    <!--    字体1-->
+    <color name="font_color1">#292934</color>
+    <!--    字体2-->
+    <color name="font_color2">#606266</color>
+    <!--    字体3-->
+    <color name="font_color3">#BBBBBB</color>
+    <!--    线条-->
+    <color name="line_color">#F0F2F5</color>
+    <!--    背景1-->
+    <color name="background_color1">#F7F7F7</color>
+    <!--    背景2-->
+    <color name="background_color2">#FDFDFD</color>
 </resources>

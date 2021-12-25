@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+<!--    字体大小1-->
+    <dimen name="font_large_28">28dp</dimen>
+<!--    字体大小2-->
+    <dimen name="font_big1_20">20dp</dimen>
+<!--    字体大小2-->
+    <dimen name="font_big2_18">20dp</dimen>
+<!--    字体大小3-->
+    <dimen name="font_mid1_16">16dp</dimen>
+<!--    字体大小3-->
+    <dimen name="font_mid2_14">14dp</dimen>
+<!--    字体大小4-->
+    <dimen name="font_small1_12">12dp</dimen>
+<!--    字体大小5-->
+    <dimen name="font_small2_10">10dp</dimen>
+
+</resources>

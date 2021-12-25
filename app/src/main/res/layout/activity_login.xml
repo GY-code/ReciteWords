@@ -1,93 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBgWhite"
+    android:orientation="vertical"
     tools:context=".activity.LoginActivity">
 
     <LinearLayout
-        android:id="@+id/linear_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
 
-        <ImageView
-            android:id="@+id/img_inbetweening"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:layout_marginTop="10dp"
-            android:scaleType="centerCrop" />
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/ic_close"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:text="欢 迎"
-            android:textColor="@color/colorBlack"
-            android:textSize="30sp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="40dp"
+            android:text="欢迎使用"
+            android:textColor="@color/font_color1"
+            android:textSize="@dimen/font_large_28"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="40dp"
-            android:gravity="center"
-            android:text="人生要走的路，没有一条是容易的路，我们只能选择一条更适合自己的路，然后凭借自己的努力，去决定自己的样子，去过上最想要拥有的那一种生活。"
-            android:textColor="@color/colorGrey" />
-
-        <com.lihang.ShadowLayout
-            android:id="@+id/card_sina_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="10dp"
-            app:hl_cornerRadius="15dp"
-            app:hl_dy="10dp"
-            app:hl_shadowBackColor="@color/colorLightBlue"
-            app:hl_shadowColor="#2a000000"
-            app:hl_shadowLimit="10dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                android:paddingBottom="20dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="17dp"
-                        android:layout_height="17dp"
-                        android:layout_marginEnd="20dp"
-                        android:src="@drawable/sina" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="微博登录"
-                        android:textSize="14sp"
-                        android:textColor="@color/colorBgWhite"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-            </RelativeLayout>
-
-        </com.lihang.ShadowLayout>
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="40dp"
+            android:paddingTop="10dp"
+            android:text="未注册手机号将自动创建账号"
+            android:textColor="@color/font_color3"
+            android:textSize="@dimen/font_mid1_16" />
 
     </LinearLayout>
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:dropDownWidth="match_parent"
+                    android:entries="@array/region"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/phnumber"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:hint="请输入手机号"
+                    android:inputType="number"
+                    android:textColor="@color/font_color1"
+                    android:textColorHint="@color/font_color3"
+                    android:textSize="@dimen/font_mid1_16"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/cashcode"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:textColor="@color/font_color1"
+                    android:textColorHint="@color/font_color3"
+                    android:textSize="@dimen/font_mid1_16" />
+
+                <Button
+                    android:id="@+id/getIdentification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="0dp"
+                    android:text="获取验证码"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/font_mid1_16" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Login"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_btn_style"
+                android:text="登录"
+                android:textSize="@dimen/font_mid1_16"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="229dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="我已阅读并同意"
+                android:textColor="@color/font_color3"
+                android:textSize="@dimen/font_small1_12"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="285dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/login_bg" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -27,7 +27,7 @@ public class MyDate extends LitePalSupport {
     private String remark;
 
     // 归属用户
-    private int userId;
+    private String userId;
 
     public int getId() {
         return id;
@@ -85,11 +85,11 @@ public class MyDate extends LitePalSupport {
         this.remark = remark;
     }
 
-    public int getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 }

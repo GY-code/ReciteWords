@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id_home" type="id"/>
+    <item name="id_likes" type="id"/>
+    <item name="id_settings" type="id"/>
+    <item name="id_discover" type="id"/>
+
+
+
+</resources>

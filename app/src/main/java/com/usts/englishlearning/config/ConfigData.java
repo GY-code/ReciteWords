@@ -50,7 +50,7 @@ public class ConfigData {
     public static String notifyLearnModeName = "notifyLearnMode";
 
     // 当前已登录的用户ID
-    public static int SinaNumLogged;
+    public static String SinaNumLogged;
     public static String SinaNumLoggedName = "SinaNumLogged";
 
     // 是否为修改计划
@@ -98,16 +98,16 @@ public class ConfigData {
     }
 
     // 获得SinaNumLogged值
-    public static int getSinaNumLogged() {
+    public static String getSinaNumLogged() {
         SharedPreferences preferences = MyApplication.getContext().getSharedPreferences(SharedDataName, Context.MODE_PRIVATE);
-        SinaNumLogged = preferences.getInt(SinaNumLoggedName, 0);
+        SinaNumLogged = preferences.getString(SinaNumLoggedName, "0");
         return SinaNumLogged;
     }
 
     // 设置SinaNumLogged值
-    public static void setSinaNumLogged(int sinaNumLogged) {
+    public static void setSinaNumLogged(String sinaNumLogged) {
         SharedPreferences.Editor editor = MyApplication.getContext().getSharedPreferences(SharedDataName, Context.MODE_PRIVATE).edit();
-        editor.putInt(SinaNumLoggedName, sinaNumLogged);
+        editor.putString(SinaNumLoggedName, sinaNumLogged);
         editor.apply();
     }
 

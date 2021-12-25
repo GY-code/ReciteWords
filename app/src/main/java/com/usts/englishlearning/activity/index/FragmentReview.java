@@ -129,8 +129,8 @@ public class FragmentReview extends Fragment implements View.OnClickListener {
         init();
 
         // 设置头像
-        List<User> userList = LitePal.where("userId = ?", ConfigData.getSinaNumLogged() + "").find(User.class);
-        Glide.with(MyApplication.getContext()).load(userList.get(0).getUserProfile()).into(imgHead);
+//        List<User> userList = LitePal.where("userId = ?", ConfigData.getSinaNumLogged() + "").find(User.class);
+//        Glide.with(MyApplication.getContext()).load(userList.get(0).getUserProfile()).into(imgHead);
 
     }
 

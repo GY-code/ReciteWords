@@ -19,7 +19,7 @@ public class UserConfig extends LitePalSupport {
     private int wordNeedReciteNum;
 
     // 归属用户
-    private int userId;
+    private String userId;
 
     @Column(defaultValue = "0")
     // 上次开始背单词的时间（点了背单词的按钮的那一刻）
@@ -50,11 +50,11 @@ public class UserConfig extends LitePalSupport {
         this.wordNeedReciteNum = wordNeedReciteNum;
     }
 
-    public int getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 

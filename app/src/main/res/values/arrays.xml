@@ -5,4 +5,11 @@
         <item>收藏单词</item>
         <item>简单词汇</item>
     </string-array>
+    <string-array name="region">
+        <item>+86</item>
+        <item>+63</item>
+        <item>+65</item>
+        <item>+81</item>
+        <item>+886</item>
+    </string-array>
 </resources>
