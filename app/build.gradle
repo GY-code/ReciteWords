@@ -54,6 +54,6 @@ dependencies {
     implementation 'com.github.chrisbanes:PhotoView:1.2.6'
     implementation 'cz.msebera.android:httpclient:4.4.1.1'
     implementation 'com.loopj.android:android-async-http:1.4.9'
-    implementation 'com.alibaba:fastjson:1.2.8'
+    implementation 'com.alibaba:fastjson:1.2.9'
 //    implementation 'com.sina.weibo.sdk:core:4.4.3:openDefaultRelease@aar'
 }

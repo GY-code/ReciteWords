@@ -280,7 +280,7 @@ public class SynchronyActivity extends BaseActivity {
                                             handler.sendMessage(message);
                                         } else {
                                             Request request = new Request.Builder()
-                                                    .url(ServerData.SERVER_ADDRESS + "/upload/" + ConfigData.getSinaNumLogged() + "/" + ConfigData.getSinaNumLogged() + ".zip")
+                                                    .url(ServerData.SERVER_ADDRESS + "/static/" + ConfigData.getSinaNumLogged() + "/" + ConfigData.getSinaNumLogged() + ".zip")
                                                     .build();
                                             OkHttpClient okHttpClient = new OkHttpClient();
                                             okHttpClient.newCall(request)
