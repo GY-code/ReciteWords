@@ -1,4 +1,4 @@
-package com.usts.englishlearning.activity;
+package com.bjtu.recitewords.activity;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -32,19 +32,19 @@ import com.lihang.ShadowLayout;
 //import com.sina.weibo.sdk.auth.WbConnectErrorMessage;
 //import com.sina.weibo.sdk.auth.sso.SsoHandler;
 
-import com.usts.englishlearning.R;
-import com.usts.englishlearning.config.ConfigData;
-import com.usts.englishlearning.config.ServerData;
-import com.usts.englishlearning.config.SinaData;
-import com.usts.englishlearning.database.User;
-import com.usts.englishlearning.database.UserConfig;
-import com.usts.englishlearning.object.JsonSina;
-import com.usts.englishlearning.util.ActivityCollector;
+import com.bjtu.recitewords.R;
+import com.bjtu.recitewords.config.ConfigData;
+import com.bjtu.recitewords.config.ServerData;
+import com.bjtu.recitewords.config.SinaData;
+import com.bjtu.recitewords.database.User;
+import com.bjtu.recitewords.database.UserConfig;
+import com.bjtu.recitewords.object.JsonSina;
+import com.bjtu.recitewords.util.ActivityCollector;
 
 import org.litepal.LitePal;
 
 import com.alibaba.fastjson.JSONObject;
-import com.usts.englishlearning.util.OkHttpUtils;
+import com.bjtu.recitewords.util.OkHttpUtils;
 
 import java.io.IOException;
 import java.util.List;

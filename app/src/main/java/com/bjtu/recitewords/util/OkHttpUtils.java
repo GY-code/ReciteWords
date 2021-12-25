@@ -1,4 +1,4 @@
-package com.usts.englishlearning.util;
+package com.bjtu.recitewords.util;
 
 import java.util.concurrent.TimeUnit;
 
