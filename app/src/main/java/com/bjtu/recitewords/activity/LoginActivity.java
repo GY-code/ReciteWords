@@ -17,6 +17,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.bjtu.recitewords.config.ConfigData;
 import com.bumptech.glide.Glide;
 import com.lihang.ShadowLayout;
 
@@ -92,7 +93,7 @@ public class LoginActivity extends BaseActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 initSinaLogin();
-                                ActivityCollector.startOtherActivity(LoginActivity.this, ChooseWordDBActivity.class);
+//                                ActivityCollector.startOtherActivity(LoginActivity.this, ChooseWordDBActivity.class);
                             }
                         })
                         .setNegativeButton("取消", null)
@@ -173,29 +174,30 @@ public class LoginActivity extends BaseActivity {
 //                                    userConfig.save();
 //                                }
 //                                if (users.isEmpty()) {
+                                    int myUserId = 19301038;
                                     User user = new User();
                                     user.setUserName("Lucas");
                                     user.setUserProfile("hello world");
-                                    user.setUserId(19301038);
+                                    user.setUserId(myUserId);
                                     // 测试
                                     user.setUserMoney(0);
                                     user.setUserWordNumber(0);
-                                    user.save();
+                                    System.out.println(user.save());
 //                                }
                                 // 查询在用户配置表中，是否存在该用户，若没有，则新建数据
 //                                if (userConfigs.isEmpty()) {
                                     UserConfig userConfig = new UserConfig();
-                                    userConfig.setUserId(19301038);
+                                    userConfig.setUserId(myUserId);
                                     userConfig.setCurrentBookId(-1);
-                                    userConfig.save();
+                                    System.out.println(userConfig.save());
 //                                }
 //                                // 默认已登录并设置已登录的微博ID
-//                                ConfigData.setIsLogged(true);
-//                                ConfigData.setSinaNumLogged(jsonSina.getId());
+                                    ConfigData.setIsLogged(true);
+                                    ConfigData.setSinaNumLogged(myUserId);
 //
-//                                Message message = new Message();
-//                                message.what = SUCCESS;
-//                                handler.sendMessage(message);
+                                Message message = new Message();
+                                message.what = SUCCESS;
+                                handler.sendMessage(message);
 //
 //                                new Thread(new Runnable() {
 //                                    @Override

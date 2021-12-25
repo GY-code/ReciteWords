@@ -6,7 +6,7 @@ import com.bjtu.recitewords.R;
 public class ConstantData {
 
     // 数据存放目录（外置存储卡）
-    public static final String DIR_TOTAL = "englishLearning";
+    public static final String DIR_TOTAL = "recite-word-data";
     // 解压后的数据目录
     public static final String DIR_AFTER_FINISH = "json";
 

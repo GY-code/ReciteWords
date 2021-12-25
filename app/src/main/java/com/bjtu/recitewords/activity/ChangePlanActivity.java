@@ -141,7 +141,7 @@ public class ChangePlanActivity extends BaseActivity {
                                                 handler.sendMessage(message);
                                                 FileUtil.getFileByBytes(response.body().bytes(), getFilesDir()+ "/" + ConstantData.DIR_TOTAL, ConstantData.bookFileNameById(currentBookId));
                                                 FileUtil.unZipFile(getFilesDir()+ "/" + ConstantData.DIR_TOTAL + "/" + ConstantData.bookFileNameById(currentBookId)
-                                                        , getFilesDir() + "/" + ConstantData.DIR_TOTAL + "/" + ConstantData.DIR_AFTER_FINISH, false);
+                                                        , getFilesDir() + "/" + ConstantData.DIR_TOTAL + "/" + ConstantData.DIR_AFTER_FINISH, true);
                                             } catch (Exception e) {
 
                                             }
