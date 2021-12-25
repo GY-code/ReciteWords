@@ -7,7 +7,7 @@
     android:background="@color/colorBgWhite"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.usts.englishlearning.activity.SearchActivity">
+    tools:context="com.bjtu.recitewords.activity.SearchActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

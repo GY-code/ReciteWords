@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.usts.englishlearning">
+    package="com.bjtu.recitewords">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
-        android:name=".util.MyApplication"
+        android:name="com.bjtu.recitewords.util.MyApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,44 +20,44 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".activity.SynchronyActivity"
+            android:name="com.bjtu.recitewords.activity.SynchronyActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.AboutActivity"
+            android:name="com.bjtu.recitewords.activity.AboutActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.FolderDetailActivity"
+            android:name="com.bjtu.recitewords.activity.FolderDetailActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.AddFolderActivity"
+            android:name="com.bjtu.recitewords.activity.AddFolderActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.WordFolderActivity"
+            android:name="com.bjtu.recitewords.activity.WordFolderActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.OCRActivity"
+            android:name="com.bjtu.recitewords.activity.OCRActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.SearchActivity"
+            android:name="com.bjtu.recitewords.activity.SearchActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.PicCustomActivity"
+            android:name="com.bjtu.recitewords.activity.PicCustomActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.UpdateActivity"
+            android:name="com.bjtu.recitewords.activity.UpdateActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <receiver
-            android:name=".broadcast.NotifyReceiver"
+            android:name="com.bjtu.recitewords.broadcast.NotifyReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -68,17 +68,17 @@
         </receiver>
 
         <service
-            android:name=".activity.service.NotifyLearnService"
+            android:name="com.bjtu.recitewords.activity.service.NotifyLearnService"
             android:enabled="true"
             android:exported="true" />
 
         <activity
-            android:name=".activity.LearnInNotifyActivity"
+            android:name="com.bjtu.recitewords.activity.LearnInNotifyActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <receiver
-            android:name=".broadcast.AlarmReceiver"
+            android:name="com.bjtu.recitewords.broadcast.AlarmReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -87,7 +87,7 @@
         </receiver>
 
         <activity
-            android:name=".activity.AlarmActivity"
+            android:name="com.bjtu.recitewords.activity.AlarmActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
@@ -102,86 +102,86 @@
             android:value="2.5" />
 
         <activity
-            android:name=".activity.ShowActivity"
+            android:name="com.bjtu.recitewords.activity.ShowActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.PlanActivity"
+            android:name="com.bjtu.recitewords.activity.PlanActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.ChartActivity"
+            android:name="com.bjtu.recitewords.activity.ChartActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.ListActivity"
+            android:name="com.bjtu.recitewords.activity.ListActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.review.GameStatusActivity"
+            android:name="com.bjtu.recitewords.activity.review.GameStatusActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="landscape"
             android:theme="@style/AppFullScreen"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.load.LoadGameActivity"
+            android:name="com.bjtu.recitewords.activity.load.LoadGameActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="landscape"
             android:theme="@style/AppFullScreen"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.review.GameActivity"
+            android:name="com.bjtu.recitewords.activity.review.GameActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="landscape"
             android:theme="@style/AppFullScreen"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.review.MatchActivity"
+            android:name="com.bjtu.recitewords.activity.review.MatchActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.review.SpeedActivity"
+            android:name="com.bjtu.recitewords.activity.review.SpeedActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.FinishActivity"
+            android:name="com.bjtu.recitewords.activity.FinishActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.CalendarActivity"
+            android:name="com.bjtu.recitewords.activity.CalendarActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.WordDetailActivity"
+            android:name="com.bjtu.recitewords.activity.WordDetailActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.ChangePlanActivity"
+            android:name="com.bjtu.recitewords.activity.ChangePlanActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.load.LoadWordActivity"
+            android:name="com.bjtu.recitewords.activity.load.LoadWordActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.ChooseWordDBActivity"
+            android:name="com.bjtu.recitewords.activity.ChooseWordDBActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.LearnWordActivity"
+            android:name="com.bjtu.recitewords.activity.LearnWordActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.DaySentenceActivity"
+            android:name="com.bjtu.recitewords.activity.DaySentenceActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppFullScreen"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.LoginActivity"
+            android:name="com.bjtu.recitewords.activity.LoginActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.WelcomeActivity"
+            android:name="com.bjtu.recitewords.activity.WelcomeActivity"
             android:launchMode="standard"
             android:screenOrientation="portrait"
             android:theme="@style/AppFullScreen"
@@ -192,7 +192,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.bjtu.recitewords.activity.MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"

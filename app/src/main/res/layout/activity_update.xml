@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBgWhite"
     android:fitsSystemWindows="true"
-    tools:context="com.usts.englishlearning.activity.UpdateActivity">
+    tools:context="com.bjtu.recitewords.activity.UpdateActivity">
 
     <RelativeLayout
         android:id="@+id/layout_update_top"

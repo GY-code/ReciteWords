@@ -7,7 +7,7 @@
     android:background="@color/colorLightWhite"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.usts.englishlearning.activity.ChartActivity">
+    tools:context="com.bjtu.recitewords.activity.ChartActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
