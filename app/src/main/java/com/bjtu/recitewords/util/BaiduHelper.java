@@ -20,9 +20,9 @@ public class BaiduHelper {
 
     private static final String TAG = "BaiduHelper";
 
-    public static final String API_KEY = "f5NKQi3sY4me8Yr4vb3VjuwL";
+    public static final String API_KEY = "8AjsGA6GWiHaaTuvc6SSq5HC";
 
-    public static final String SECRET_KEY = "iRDFSRUzgyPiooBLhUZx2RRLtteGRwaE";
+    public static final String SECRET_KEY = "Yp04kV9Bd0ycBGAom2jWo4QpzgNBT8Tl";
 
     public static final String GRANT_TYPE = "client_credentials";
 

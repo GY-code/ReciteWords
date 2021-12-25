@@ -239,6 +239,7 @@ public class FragmentReview extends Fragment implements View.OnClickListener {
 
                                     @Override
                                     public void onFailure(Call call, IOException e) {
+                                        e.printStackTrace();
                                         Message message = new Message();
                                         message.what = WRONG;
                                         handler.sendMessage(message);
@@ -255,6 +256,7 @@ public class FragmentReview extends Fragment implements View.OnClickListener {
                                             message.what = FINISH;
                                             handler.sendMessage(message);
                                         } catch (Exception e) {
+                                            e.printStackTrace();
                                             Message message = new Message();
                                             message.what = WRONG;
                                             handler.sendMessage(message);

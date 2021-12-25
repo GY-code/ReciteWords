@@ -60,7 +60,7 @@ public class OCRActivity extends BaseActivity {
                     WordController.needLearnWords.clear();
                     HashMap<Integer, Integer> map = new HashMap<>();
                     for (int i = 0; i < result.length; ++i) {
-                        Log.d(TAG, i + result[i]);
+                        Log.d(TAG, i +":"+ result[i]);
                         List<Word> words = LitePal.where("word = ?", result[i]).select("wordId", "word").find(Word.class);
                         if (!words.isEmpty()) {
                             Log.d(TAG, i + "我找到了" + words.get(0).getWord());
