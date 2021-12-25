@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBgWhite"
     android:fitsSystemWindows="true"
-    tools:context="com.usts.englishlearning.activity.review.SpeedActivity">
+    tools:context="com.bjtu.recitewords.activity.review.SpeedActivity">
 
     <TextView
         android:id="@+id/text_sp_top"

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FFD87D"
     android:fitsSystemWindows="true"
-    tools:context="com.usts.englishlearning.activity.review.GameStatusActivity">
+    tools:context="com.bjtu.recitewords.activity.review.GameStatusActivity">
 
     <ImageView
         android:layout_width="match_parent"

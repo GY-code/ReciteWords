@@ -7,7 +7,7 @@
     android:background="@color/colorLightWhite"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.usts.englishlearning.activity.CalendarActivity">
+    tools:context="com.bjtu.recitewords.activity.CalendarActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

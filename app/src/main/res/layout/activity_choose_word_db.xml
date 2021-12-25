@@ -14,6 +14,7 @@
         android:padding="20dp">
 
         <ImageView
+            android:id="@+id/img_left_back"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_centerVertical="true"

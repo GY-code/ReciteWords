@@ -12,7 +12,7 @@
         android:layout_height="250dp"
         android:background="@color/colorLightWhite"
         android:fitsSystemWindows="true"
-        app:layout_behavior="com.usts.englishlearning.util.FixAppBarLayoutBehavior">
+        app:layout_behavior="com.bjtu.recitewords.util.FixAppBarLayoutBehavior">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar"

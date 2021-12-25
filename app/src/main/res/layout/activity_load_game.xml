@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     android:background="@color/colorBlackAS"
     android:fitsSystemWindows="true"
-    tools:context="com.usts.englishlearning.activity.load.LoadGameActivity">
+    tools:context="com.bjtu.recitewords.activity.load.LoadGameActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true">
 
-        <com.usts.englishlearning.util.CustomVideoView
+        <com.bjtu.recitewords.util.CustomVideoView
             android:id="@+id/video"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

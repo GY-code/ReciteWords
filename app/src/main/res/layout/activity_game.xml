@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBgLittleWhite"
     android:fitsSystemWindows="true"
-    tools:context="com.usts.englishlearning.activity.review.GameActivity">
+    tools:context="com.bjtu.recitewords.activity.review.GameActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_gm_top"
