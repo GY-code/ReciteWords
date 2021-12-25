@@ -86,3 +86,11 @@ lint/tmp/
 
 # Android Profiling
 *.hprof
+
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+
+
