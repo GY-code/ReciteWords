@@ -2,8 +2,8 @@ package com.bjtu.recitewords.config;
 
 public class ServerData {
 
-//    public final static String SERVER_ADDRESS = "http://106.14.105.16:8000";
-    public final static String SERVER_ADDRESS = "http://192.168.31.35:8000";
+    public final static String SERVER_ADDRESS = "http://106.14.105.16:8000";
+//    public final static String SERVER_ADDRESS = "http://192.168.31.35:8000";
 
     public final static String SERVER_LOGIN_ADDRESS = SERVER_ADDRESS + "/Login.php";
     public final static String SERVER_UPLOAD_RECORD_ADDRESS = SERVER_ADDRESS + "/artapp/Record/";
