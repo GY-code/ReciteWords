@@ -260,7 +260,7 @@ public class WelcomeActivity extends BaseActivity implements View.OnClickListene
     }
 
     private void updateServerData() {
-        List<User> users = LitePal.where("userId = ?", ConfigData.getSinaNumLogged() + "").find(User.class);
+        /*List<User> users = LitePal.where("userId = ?", ConfigData.getSinaNumLogged() + "").find(User.class);
         RequestBody formBody = new FormBody.Builder()
                 .add(ServerData.LOGIN_SINA_NUM, users.get(0).getUserId()+"")
                 .add(ServerData.LOGIN_SINA_NAME, users.get(0).getUserName())
@@ -281,7 +281,7 @@ public class WelcomeActivity extends BaseActivity implements View.OnClickListene
                     public void onResponse(Call call, Response response) throws IOException {
 
                     }
-                });
+                });*/
     }
 
 }

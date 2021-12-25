@@ -92,10 +92,6 @@ public class SynchronyActivity extends BaseActivity {
         @Override
         public void handleMessage(@NonNull final Message msg) {
             switch (msg.what) {
-                case FAIL_RECOVER_CLOUD:
-                    progressDialog.dismiss();
-                    Toast.makeText(SynchronyActivity.this, "云端暂无数据，请备份再重试", Toast.LENGTH_SHORT).show();
-                    break;
                 case FINISH_SYN_LOCAL:
                     progressDialog.dismiss();
                     Toast.makeText(SynchronyActivity.this, "备份完毕", Toast.LENGTH_SHORT).show();
@@ -103,6 +99,11 @@ public class SynchronyActivity extends BaseActivity {
                 case FINISH_RECOVER_LOCAL:
                     progressDialog.dismiss();
                     Toast.makeText(SynchronyActivity.this, "恢复成功", Toast.LENGTH_SHORT).show();
+                    break;
+                    //云端数据处理
+                case FAIL_RECOVER_CLOUD:
+                    progressDialog.dismiss();
+                    Toast.makeText(SynchronyActivity.this, "云端暂无数据，请备份再重试", Toast.LENGTH_SHORT).show();
                     break;
                 case FINISH_SYN_CLOUD:
                     progressDialog.dismiss();
