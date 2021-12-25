@@ -28,6 +28,7 @@ public class ChooseWordDBActivity extends BaseActivity {
     private RecyclerView recyclerView;
 
     private ImageView imgRecover;
+    private ImageView imgBack;
 
     // 书单数据
     private List<ItemWordBook> itemWordBookList = new ArrayList<>();
@@ -71,6 +72,7 @@ public class ChooseWordDBActivity extends BaseActivity {
     private void init() {
         recyclerView = findViewById(R.id.recycler_word_book_list);
         imgRecover = findViewById(R.id.img_wb_recover);
+        imgBack=findViewById(R.id.img_left_back);
     }
 
     // 初始化数据
