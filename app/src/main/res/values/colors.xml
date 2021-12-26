@@ -25,7 +25,8 @@
     <color name="colorBlackAS">#000000</color>
     <color name="colorGrey">#626873</color>
     <color name="colorLightGrey">#8994A9</color>
-    <color name="colorBgOrange">#FBB692</color>
+    <color name="colorLightLightGrey">#E6E6E6</color>
+    <color name="colorBgPurple">#C3A7F4</color>
     <color name="colorLightWhite">#F2F3F8</color>
     <color name="colorLightWhiteAS">#F2F3F8</color>
     <color name="colorLightWhiteN">#3c3c3c</color>

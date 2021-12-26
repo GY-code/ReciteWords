@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="33dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="20dp">
 
@@ -19,16 +19,15 @@
             android:layout_height="wrap_content"
             android:text="复习专栏"
             android:textColor="@color/colorBlack"
-            android:textSize="40dp"
-            android:layout_marginTop="20dp"
+            android:textSize="30dp"
             android:textStyle="bold" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <!--<de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/img_me_head"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/icon_header"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/icon_header" />-->
 
     </RelativeLayout>
 
