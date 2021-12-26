@@ -233,7 +233,7 @@
                                     android:ellipsize="end"
                                     android:padding="10dp"
                                     android:text="中文释义"
-                                    android:textColor="@color/colorFontWhite"
+                                    android:textColor="@color/white"
                                     android:textSize="20sp" />
 
                                 <TextView
@@ -243,7 +243,7 @@
                                     android:ellipsize="end"
                                     android:paddingLeft="25sp"
                                     android:paddingRight="25sp"
-                                    android:textColor="@color/colorFontWhite"
+                                    android:textColor="@color/white"
                                     android:textSize="15sp" />
 
                                 <TextView
@@ -253,7 +253,7 @@
                                     android:ellipsize="end"
                                     android:padding="10dp"
                                     android:text="英文释义"
-                                    android:textColor="@color/colorFontWhite"
+                                    android:textColor="@color/white"
                                     android:textSize="20sp" />
 
                                 <TextView
@@ -263,7 +263,7 @@
                                     android:ellipsize="end"
                                     android:paddingLeft="25sp"
                                     android:paddingRight="25sp"
-                                    android:textColor="@color/colorFontWhite"
+                                    android:textColor="@color/white"
                                     android:textSize="15sp" />
                                 <!--<TextView
                                     android:layout_width="match_parent"

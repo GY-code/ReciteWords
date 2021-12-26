@@ -44,7 +44,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/player_card"
         tools:text="这是一个标题"
-        android:textColor="@color/black"
+        android:textColor="@color/colorBlack"
         android:textSize="15sp"
         android:textStyle="bold"/>
 

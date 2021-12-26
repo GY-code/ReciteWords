@@ -124,10 +124,10 @@
                                 android:id="@+id/img_detail_star"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
                                 android:layout_centerVertical="true"
                                 android:layout_marginStart="10dp"
                                 android:layout_marginEnd="10dp"
-                                android:layout_toStartOf="@+id/img_detail_phone"
                                 app:cardBackgroundColor="@color/colorBgWhite"
                                 app:cardCornerRadius="15dp"
                                 app:cardElevation="0dp">
@@ -155,6 +155,7 @@
                                 android:layout_height="30dp"
                                 android:layout_alignParentEnd="true"
                                 android:layout_centerVertical="true"
+                                android:visibility="invisible"
                                 app:cardBackgroundColor="@color/colorBgWhite"
                                 app:cardCornerRadius="15dp"
                                 app:cardElevation="0dp">

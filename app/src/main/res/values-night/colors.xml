@@ -15,8 +15,11 @@
     <color name="colorBgLightBlackTop">#2C3039</color>
     <color name="colorBlack">#8994A9</color>
     <color name="colorGrey">#626873</color>
+    <color name="colorLightLightGrey">#5A5A5A</color>
+    <color name="colorLightLightBlue">#5A5A5A</color>
     <color name="colorLightGrey">#6A6A6A</color>
     <color name="colorBgPurple">#424242</color>
+    <color name="colorBgDeepPurple">#424242</color>
     <color name="colorLightWhite">#3c3c3c</color>
     <color name="colorLittleWhite">#3c3c3c</color>
     <color name="colorFontWhite">#8994A9</color>

@@ -8,6 +8,7 @@
     <color name="colorAccent">#4089ff</color>
     <color name="colorMainBlue">#3675FF</color>
     <color name="colorLightBlue">#4089ff</color>
+    <color name="colorLightLightBlue">#8ACBFF</color>
     <color name="colorLightBlueN">#3E6AB1</color>
     <color name="colorLittleBlue">#EBF1FD</color>
     <color name="colorLittleBlueN">#888C95</color>
@@ -27,6 +28,7 @@
     <color name="colorLightGrey">#8994A9</color>
     <color name="colorLightLightGrey">#E6E6E6</color>
     <color name="colorBgPurple">#C3A7F4</color>
+    <color name="colorBgDeepPurple">#814CDF</color>
     <color name="colorLightWhite">#F2F3F8</color>
     <color name="colorLightWhiteAS">#F2F3F8</color>
     <color name="colorLightWhiteN">#3c3c3c</color>
