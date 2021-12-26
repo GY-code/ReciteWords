@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="dkplayer_theme_color">#4089ff</color>
+    <color name="dkplayer_theme_color_translucent">#4089ff</color>
+
     <color name="colorPrimary">#3675FF</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#4089ff</color>

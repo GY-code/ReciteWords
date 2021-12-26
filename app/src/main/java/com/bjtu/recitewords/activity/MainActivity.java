@@ -18,11 +18,18 @@ import com.bjtu.recitewords.R;
 import com.bjtu.recitewords.activity.index.FragmentMe;
 import com.bjtu.recitewords.activity.index.FragmentReview;
 import com.bjtu.recitewords.activity.index.FragmentWord;
+import com.bjtu.recitewords.discover.fragment.ListFragment;
+
+
 import com.bjtu.recitewords.util.ActivityCollector;
+
+import xyz.doikki.videoplayer.player.VideoViewManager;
 
 public class MainActivity extends BaseActivity {
 
     private Fragment fragWord, fragReview, fragMe;
+
+    private Fragment fragList;
 
     private Fragment[] fragments;
 
@@ -36,6 +43,8 @@ public class MainActivity extends BaseActivity {
     private static final String TAG = "MainActivity";
 
     public static boolean needRefresh = true;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,8 +79,9 @@ public class MainActivity extends BaseActivity {
     private void initFragment() {
         fragWord = new FragmentWord();
         fragReview = new FragmentReview();
+        fragList = new ListFragment();
         fragMe = new FragmentMe();
-        fragments = new Fragment[]{fragWord, fragReview, fragMe};
+        fragments = new Fragment[]{fragWord, fragReview, fragList, fragMe};
         switch (lastFragment) {
             case 0:
                 getSupportFragmentManager().beginTransaction().replace(R.id.linear_frag_container, fragWord).show(fragWord).commit();
@@ -80,6 +90,9 @@ public class MainActivity extends BaseActivity {
                 getSupportFragmentManager().beginTransaction().replace(R.id.linear_frag_container, fragReview).show(fragReview).commit();
                 break;
             case 2:
+                getSupportFragmentManager().beginTransaction().replace(R.id.linear_frag_container, fragList).show(fragList).commit();
+                break;
+            case 3:
                 getSupportFragmentManager().beginTransaction().replace(R.id.linear_frag_container, fragMe).show(fragMe).commit();
                 break;
         }
@@ -88,21 +101,30 @@ public class MainActivity extends BaseActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.bnavigation_word:
+                        VideoViewManager.instance().releaseByTag("list");
                         if (lastFragment != 0) {
                             switchFragment(lastFragment, 0);
                             lastFragment = 0;
                         }
                         return true;
                     case R.id.bnavigation_review:
+                        VideoViewManager.instance().releaseByTag("list");
                         if (lastFragment != 1) {
                             switchFragment(lastFragment, 1);
                             lastFragment = 1;
                         }
                         return true;
-                    case R.id.bnavigation_me:
+                    case R.id.bnavigation_news:
                         if (lastFragment != 2) {
                             switchFragment(lastFragment, 2);
                             lastFragment = 2;
+                        }
+                        return true;
+                    case R.id.bnavigation_me:
+                        VideoViewManager.instance().releaseByTag("list");
+                        if (lastFragment != 3) {
+                            switchFragment(lastFragment, 3);
+                            lastFragment = 3;
                         }
                         return true;
                 }
