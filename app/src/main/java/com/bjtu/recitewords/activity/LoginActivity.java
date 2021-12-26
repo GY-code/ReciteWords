@@ -419,11 +419,15 @@ public class LoginActivity extends BaseActivity {
                 {
                     Looper.prepare();
                     Toast.makeText(LoginActivity.this, "验证码错误", Toast.LENGTH_SHORT).show();
-                    Looper.prepare();
+                    Looper.loop();
                 }
                 else if (data.equals("need_register")) {
                     Looper.prepare();
                     Toast.makeText(LoginActivity.this, "新用户注册", Toast.LENGTH_SHORT).show();
+                    Looper.loop();
+                } else {
+                    Looper.prepare();
+                    Toast.makeText(LoginActivity.this, "登录失败", Toast.LENGTH_SHORT).show();
                     Looper.loop();
                 }
             }

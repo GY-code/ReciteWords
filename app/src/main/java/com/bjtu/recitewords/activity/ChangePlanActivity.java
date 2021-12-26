@@ -220,4 +220,12 @@ public class ChangePlanActivity extends BaseActivity {
             ActivityCollector.startOtherActivity(ChangePlanActivity.this, ChooseWordDBActivity.class);
         }
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (progressDialog != null) {
+            progressDialog.dismiss();
+        }
+    }
 }

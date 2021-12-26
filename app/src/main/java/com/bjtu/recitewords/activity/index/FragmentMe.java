@@ -2,8 +2,10 @@ package com.bjtu.recitewords.activity.index;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -29,12 +31,22 @@ import com.bjtu.recitewords.activity.CalendarActivity;
 import com.bjtu.recitewords.activity.ChartActivity;
 import com.bjtu.recitewords.activity.LearnInNotifyActivity;
 import com.bjtu.recitewords.activity.ListActivity;
+import com.bjtu.recitewords.activity.LoginActivity;
 import com.bjtu.recitewords.activity.MainActivity;
 import com.bjtu.recitewords.activity.PlanActivity;
 import com.bjtu.recitewords.activity.SynchronyActivity;
+import com.bjtu.recitewords.activity.WelcomeActivity;
 import com.bjtu.recitewords.config.ConfigData;
+import com.bjtu.recitewords.database.FolderLinkWord;
+import com.bjtu.recitewords.database.Interpretation;
+import com.bjtu.recitewords.database.LearnTime;
 import com.bjtu.recitewords.database.MyDate;
+import com.bjtu.recitewords.database.Phrase;
+import com.bjtu.recitewords.database.Sentence;
 import com.bjtu.recitewords.database.User;
+import com.bjtu.recitewords.database.UserConfig;
+import com.bjtu.recitewords.database.Word;
+import com.bjtu.recitewords.database.WordFolder;
 import com.bjtu.recitewords.util.MyApplication;
 import com.bjtu.recitewords.util.TimeController;
 
@@ -52,6 +64,8 @@ public class FragmentMe extends Fragment implements View.OnClickListener {
     private TextView textDays, textWordNum, textMoney;
 
     private TextView textName;
+
+    private TextView textLogout;
 
     private Switch aSwitchNight;
 
@@ -156,6 +170,30 @@ public class FragmentMe extends Fragment implements View.OnClickListener {
             }
         });
 
+        textLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SharedPreferences.Editor editor = MyApplication.getContext().getSharedPreferences(ConfigData.SharedDataName, Context.MODE_PRIVATE).edit();
+                editor.clear();
+                editor.apply();
+                LitePal.deleteAll(FolderLinkWord.class);
+                LitePal.deleteAll(Interpretation.class);
+                LitePal.deleteAll(LearnTime.class);
+                LitePal.deleteAll(MyDate.class);
+                LitePal.deleteAll(Phrase.class);
+                LitePal.deleteAll(Sentence.class);
+                LitePal.deleteAll(User.class);
+                LitePal.deleteAll(UserConfig.class);
+                LitePal.deleteAll(Word.class);
+                LitePal.deleteAll(WordFolder.class);
+                Log.d(TAG, "删除完了1");
+
+                Intent intent = new Intent(getActivity(), WelcomeActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            }
+        });
+
     }
 
 
@@ -182,6 +220,8 @@ public class FragmentMe extends Fragment implements View.OnClickListener {
         layoutSyno = getActivity().findViewById(R.id.layout_me_syno);
         layoutSyno.setOnClickListener(this);
         textName = getActivity().findViewById(R.id.text_me_name);
+
+        textLogout = getActivity().findViewById(R.id.text_logout);
     }
 
     @Override

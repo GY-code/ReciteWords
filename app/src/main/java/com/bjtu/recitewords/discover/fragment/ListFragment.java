@@ -11,15 +11,11 @@ import com.bjtu.recitewords.R;
 import com.bjtu.recitewords.discover.adapter.ListPagerAdapter;
 import com.bjtu.recitewords.discover.util.Tag;
 
-/**
- * 注意：RecyclerView demo 我采用继承的方式实现，
- * ${@link com.bjtu.recitewords.discover.fragment.list.RecyclerViewPortraitFragment} 我甚至使用了三重继承😂，
- * 实际开发中可以不需要这样。
- * 我这样做仅仅只为代码复用，方便维护
- */
 public class ListFragment extends BaseFragment {
 
     public ListPagerAdapter listPagerAdapter;
+
+    private TabLayout tabLayout;
 
     @Override
     protected int getLayoutResId() {
@@ -40,7 +36,7 @@ public class ListFragment extends BaseFragment {
 
         viewPager.setAdapter(listPagerAdapter);
 
-        TabLayout tabLayout = findViewById(R.id.tab_layout);
+        tabLayout = findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);
     }
 

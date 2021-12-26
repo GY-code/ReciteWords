@@ -62,6 +62,7 @@ public class WordBookAdapter extends RecyclerView.Adapter<WordBookAdapter.ViewHo
                 if (userConfigs.get(0).getCurrentBookId() == itemWordBook.getBookId() &&
                         userConfigs.get(0).getWordNeedReciteNum() != 0) {
                     Toast.makeText(MyApplication.getContext(), "当前选的就是这本书哦", Toast.LENGTH_SHORT).show();
+
                 } else {
                     // 更新数据
                     UserConfig userConfig = new UserConfig();

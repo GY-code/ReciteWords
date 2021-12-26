@@ -88,5 +88,6 @@ dependencies {
 
 //    # 可选，如需要缓存或者抖音预加载功能请引入此库
     implementation 'xyz.doikki.android.dkplayer:videocache:3.3.5'
-//    implementation 'com.sina.weibo.sdk:core:4.4.3:openDefaultRelease@aar'
+
+    implementation 'io.github.h07000223:flycoTabLayout:3.0.0'
 }
