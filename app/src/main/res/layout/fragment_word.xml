@@ -73,7 +73,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hello"
+                android:text="悦 词"
                 android:textColor="@color/colorBlack"
                 android:textSize="40sp"
                 android:textStyle="bold" />
@@ -82,7 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="study hard and make progress each day"
+                android:text="移动应用开发技术课程大作业"
                 android:textColor="@color/colorBlack"
                 android:textSize="13sp" />
 
@@ -157,12 +157,12 @@
             android:layout_height="match_parent"
             android:layout_above="@+id/card_index_start"
             android:layout_marginBottom="20dp"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -238,16 +238,16 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
                     app:cardBackgroundColor="@color/colorBgOrange"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="0dp">
@@ -289,9 +289,9 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/card_main_search"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/colorBgWhite"
                     app:cardCornerRadius="10dp"
