@@ -10,7 +10,7 @@
         android:layout_width="60dp"
         android:layout_height="65dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="27dp">
+        android:layout_marginTop="33dp">
 
         <View
             android:id="@+id/view_main_tran"
@@ -62,7 +62,7 @@
         android:id="@+id/layout_main_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="33dp">
+        android:layout_marginTop="37dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -352,7 +352,6 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="20dp"
                     android:layout_weight="1"
-                    app:cardBackgroundColor="@color/colorLightLightGrey"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="0dp"
                     >

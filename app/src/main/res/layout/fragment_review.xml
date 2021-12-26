@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorLightWhite"
@@ -10,16 +11,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="7dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="复习专栏"
             android:textColor="@color/colorBlack"
-            android:textSize="30dp"
+            android:textSize="25dp"
             android:textStyle="bold" />
 
         <!--<de.hdodenhof.circleimageview.CircleImageView
@@ -69,13 +70,15 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@color/colorBgDeepPurple">
+                            android:background="@color/colorBgPurple"
+                            >
 
                             <LinearLayout
                                 android:id="@+id/layout_re_match"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:background="?android:attr/selectableItemBackground"
+                                android:gravity="center_vertical"
                                 android:orientation="vertical"
                                 android:padding="15dp">
 
@@ -83,7 +86,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="多词匹配"
-                                    android:textColor="@color/colorFontWhite"
+                                    android:textColor="@color/white"
                                     android:textSize="16sp"
                                     android:textStyle="bold" />
 
@@ -92,7 +95,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
                                     android:text="写作"
-                                    android:textColor="@color/colorFontWhite"
+                                    android:textColor="@color/white"
                                     android:textSize="10sp" />
 
                             </LinearLayout>
@@ -100,7 +103,9 @@
                             <ImageView
                                 android:layout_width="55dp"
                                 android:layout_height="55dp"
+                                android:layout_alignParentTop="true"
                                 android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
                                 android:layout_marginStart="15dp"
                                 android:layout_marginTop="15dp"
                                 android:layout_marginEnd="15dp"
@@ -121,13 +126,14 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@color/colorLightLightGrey">
+                            android:background="@color/colorLightLightBlue">
 
                             <LinearLayout
                                 android:id="@+id/layout_re_speed"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:background="?android:attr/selectableItemBackground"
+                                android:gravity="center_vertical"
                                 android:orientation="vertical"
                                 android:padding="15dp">
 
@@ -135,7 +141,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="单词速过"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/white"
                                     android:textSize="16sp"
                                     android:textStyle="bold" />
 
@@ -144,7 +150,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
                                     android:text="随身听"
-                                    android:textColor="@color/colorBlack"
+                                    android:textColor="@color/white"
                                     android:textSize="10sp" />
 
                             </LinearLayout>
@@ -153,11 +159,9 @@
                                 android:layout_width="55dp"
                                 android:layout_height="55dp"
                                 android:layout_alignParentEnd="true"
-                                android:layout_marginStart="15dp"
-                                android:layout_marginEnd="15dp"
-                                android:src="@drawable/icon_speed"
                                 android:layout_centerVertical="true"
-                                />
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/icon_speed" />
 
                         </RelativeLayout>
 
@@ -166,7 +170,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="@color/colorLightLightBlue"
                         app:cardCornerRadius="10dp"
                         android:layout_marginTop="20dp"
                         app:cardElevation="0dp">
@@ -212,7 +215,7 @@
                                 android:layout_marginTop="15dp"
                                 android:layout_marginEnd="15dp"
                                 android:layout_marginBottom="15dp"
-                                android:src="@drawable/pic_photo" />
+                                android:src="@drawable/photography" />
 
                         </RelativeLayout>
 

@@ -79,7 +79,7 @@ public class DataUtil {
                 "https://nimg.ws.126.net/?url=http://open-image.ws.126.net/image/snapshot_movie/2016/11/3/2/eaa0e1e0dfb34a5da7ad81adf46f0732.jpg&thumbnail=270x150&quality=95&type=jpg",
                 "https://mov.bn.netease.com/open-movie/nos/mp4/2015/08/07/SAVFT8DKT_sd.mp4"));
 
-        videoList.add(new VideoBean("【TED】被判无期徒刑的女人: 一首来自监狱中无期徒刑的女人的歌",
+        videoList.add(new VideoBean("【TED】一首来自监狱中无期徒刑的女人的歌",
                 "https://nimg.ws.126.net/?url=http://open-image.ws.126.net/image/snapshot_movie/2016/11/8/2/94a74953133f49d586cb514098e85782.jpg&thumbnail=270x150&quality=95&type=jpg",
                 "https://mov.bn.netease.com/open-movie/nos/mp4/2015/08/11/SAVQN530E_sd.mp4"));
 

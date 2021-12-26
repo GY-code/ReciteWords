@@ -26,10 +26,10 @@
             android:layout_width="@dimen/dkplayer_play_btn_size"
             android:layout_height="@dimen/dkplayer_play_btn_size"
             android:layout_gravity="center"
-            android:background="@drawable/dkplayer_shape_play_bg"
-            android:padding="@dimen/dkplayer_controller_icon_padding"
-            android:src="@drawable/dkplayer_ic_action_replay" />
-
+            android:padding="5dp"
+            android:src="@drawable/ic_restart" />
+<!--        android:background="@drawable/dkplayer_shape_play_bg"-->
+<!--        android:padding="@dimen/dkplayer_controller_icon_padding"-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
