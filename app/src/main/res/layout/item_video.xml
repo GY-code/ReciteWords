@@ -8,7 +8,7 @@
     <!--        app:layout_constraintDimensionRatio="16:9"-->
     <androidx.cardview.widget.CardView
         android:id="@+id/player_card"
-        android:layout_width="330dp"
+        android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         app:cardBackgroundColor="@color/colorBgWhite"
@@ -20,7 +20,7 @@
 
         <FrameLayout
             android:id="@+id/player_container"
-            android:layout_width="330dp"
+            android:layout_width="310dp"
             android:layout_height="190dp"
             android:background="@android:color/black"
             app:layout_constraintDimensionRatio="16:9"

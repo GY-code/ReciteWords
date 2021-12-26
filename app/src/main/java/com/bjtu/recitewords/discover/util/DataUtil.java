@@ -51,14 +51,6 @@ public class DataUtil {
 
     public static List<VideoBean> getVideoList() {
         List<VideoBean> videoList = new ArrayList<>();
-        videoList.add(new VideoBean("【TED】探索世界最深洞穴",
-                "https://nimg.ws.126.net/?url=http://open-image.ws.126.net/image/snapshot_movie/2020/2/c/b/31e932b622784a47935c6de0def057cb.jpg&thumbnail=270x150&quality=95&type=jpg",
-                "https://mov.bn.netease.com/open-movie/nos/mp4/2014/05/28/S9SDQS50P_sd.mp4"));
-
-        videoList.add(new VideoBean("【TEDx】做一个像样的人，不难",
-                "https://nimg.ws.126.net/?url=http://open-image.ws.126.net/image/snapshot_movie/2017/6/a/9/271e1f1d719644aaa50125bf156754a9.jpg&thumbnail=270x150&quality=95&type=jpg",
-                "https://mov.bn.netease.com/open-movie/nos/mp4/2017/06/13/SCLSCU6AF_sd.mp4"));
-
         videoList.add(new VideoBean("【TED】动画如何帮助科学家检验假说",
                 "https://nimg.ws.126.net/?url=http://open-image.ws.126.net/image/snapshot_movie/2016/11/0/5/98619f1ba84840c3993d1169f3ef5b05.jpg&thumbnail=270x150&quality=95&type=jpg",
                 "https://mov.bn.netease.com/open-movie/nos/mp4/2015/01/26/SAFVOMNC2_sd.mp4"));
@@ -66,6 +58,14 @@ public class DataUtil {
         videoList.add(new VideoBean("【TED】为什么智能统计数据是打击犯罪的关键",
                 "https://nimg.ws.126.net/?url=http://open-image.ws.126.net/image/snapshot_movie/2016/11/a/5/162f906e7d63481992c306cd8e0f35a5.jpg&thumbnail=270x150&quality=95&type=jpg",
                 "https://mov.bn.netease.com/open-movie/nos/mp4/2014/05/28/S9SDU7P71_sd.mp4"));
+
+        videoList.add(new VideoBean("【TED】探索世界最深洞穴",
+                "https://nimg.ws.126.net/?url=http://open-image.ws.126.net/image/snapshot_movie/2020/2/c/b/31e932b622784a47935c6de0def057cb.jpg&thumbnail=270x150&quality=95&type=jpg",
+                "https://mov.bn.netease.com/open-movie/nos/mp4/2014/05/28/S9SDQS50P_sd.mp4"));
+
+        videoList.add(new VideoBean("【TEDx】做一个像样的人，不难",
+                "https://nimg.ws.126.net/?url=http://open-image.ws.126.net/image/snapshot_movie/2017/6/a/9/271e1f1d719644aaa50125bf156754a9.jpg&thumbnail=270x150&quality=95&type=jpg",
+                "https://mov.bn.netease.com/open-movie/nos/mp4/2017/06/13/SCLSCU6AF_sd.mp4"));
 
         videoList.add(new VideoBean("【TED】Jinsop Lee: 五感设计",
                 "https://nimg.ws.126.net/?url=http://open-image.ws.126.net/image/snapshot_movie/2016/11/8/9/7c555c0012964c3f9abb1929d175d389.jpg&thumbnail=270x150&quality=95&type=jpg",
