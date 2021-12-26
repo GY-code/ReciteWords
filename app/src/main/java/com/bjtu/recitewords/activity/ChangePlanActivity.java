@@ -1,8 +1,10 @@
 package com.bjtu.recitewords.activity;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -213,12 +215,26 @@ public class ChangePlanActivity extends BaseActivity {
 
     @Override
     public void onBackPressed() {
-        List<UserConfig> userConfigs = LitePal.where("userId = ?", ConfigData.getSinaNumLogged() + "").find(UserConfig.class);
+        AlertDialog.Builder builder = new AlertDialog.Builder(ChangePlanActivity.this);
+        builder.setTitle("提示")
+                .setMessage("确定要退出吗?")
+                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        ActivityCollector.finishAll();
+                    }
+                })
+                .setNegativeButton("取消", null)
+                .show();
+//        List<UserConfig> userConfigs = LitePal.where("userId = ?", ConfigData.getSinaNumLogged() + "").find(UserConfig.class);
+//        super.onBackPressed();
+/*
         if (userConfigs.get(0).getWordNeedReciteNum() != 0)
             super.onBackPressed();
         else {
             ActivityCollector.startOtherActivity(ChangePlanActivity.this, ChooseWordDBActivity.class);
         }
+*/
     }
 
     @Override

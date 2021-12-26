@@ -72,7 +72,7 @@ public class ChooseWordDBActivity extends BaseActivity {
     private void init() {
         recyclerView = findViewById(R.id.recycler_word_book_list);
         imgRecover = findViewById(R.id.img_wb_recover);
-        imgBack=findViewById(R.id.img_left_back);
+        imgBack = findViewById(R.id.img_left_back);
     }
 
     // 初始化数据
@@ -87,20 +87,20 @@ public class ChooseWordDBActivity extends BaseActivity {
     @Override
     public void onBackPressed() {
         // 已登录
-        if (LitePal.where("userId = ?", ConfigData.getSinaNumLogged() + "").find(UserConfig.class).get(0).getCurrentBookId() != -1)
+        /*if (LitePal.where("userId = ?", ConfigData.getSinaNumLogged() + "").find(UserConfig.class).get(0).getCurrentBookId() != -1)
             super.onBackPressed();
         else {
-            AlertDialog.Builder builder = new AlertDialog.Builder(ChooseWordDBActivity.this);
-            builder.setTitle("提示")
-                    .setMessage("确定要退出吗?")
-                    .setPositiveButton("确定", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            ActivityCollector.finishAll();
-                        }
-                    })
-                    .setNegativeButton("取消", null)
-                    .show();
-        }
+        }*/
+        AlertDialog.Builder builder = new AlertDialog.Builder(ChooseWordDBActivity.this);
+        builder.setTitle("提示")
+                .setMessage("确定要退出吗?")
+                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        ActivityCollector.finishAll();
+                    }
+                })
+                .setNegativeButton("取消", null)
+                .show();
     }
 }
