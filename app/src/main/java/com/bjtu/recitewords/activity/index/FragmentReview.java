@@ -68,7 +68,7 @@ public class FragmentReview extends Fragment implements View.OnClickListener {
 
     private LinearLayout layoutSpeed, layoutMatch;
 
-    private CircleImageView imgHead;
+//    private CircleImageView imgHead;
 
     private final int REQUEST_CODE_TAKE_PICTURE = 1000;
 
@@ -143,7 +143,7 @@ public class FragmentReview extends Fragment implements View.OnClickListener {
         layoutMatch.setOnClickListener(this);
         layoutGame = getActivity().findViewById(R.id.layout_re_game);
         layoutGame.setOnClickListener(this);
-        imgHead = getActivity().findViewById(R.id.img_me_head);
+//        imgHead = getActivity().findViewById(R.id.img_me_head);
     }
 
 

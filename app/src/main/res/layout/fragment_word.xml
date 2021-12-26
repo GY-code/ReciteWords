@@ -74,17 +74,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="悦 词"
+                android:text="Good Afternoon"
                 android:textColor="@color/colorBlack"
-                android:textSize="40sp"
+                android:textSize="30dp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="移动应用开发技术课程大作业"
+                android:text="Sow nothing, reap nothing."
                 android:textColor="@color/colorBlack"
                 android:textSize="13sp" />
 
@@ -92,7 +91,7 @@
                 android:id="@+id/layout_main_db"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
@@ -151,14 +150,14 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/layout_main_top"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/card_index_start"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="25dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -300,7 +299,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="25dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
@@ -308,7 +307,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2.5"
-                    app:cardBackgroundColor="@color/colorBgOrange"
+                    app:cardBackgroundColor="@color/colorBgPurple"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="0dp">
 
@@ -353,14 +352,16 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="20dp"
                     android:layout_weight="1"
-                    app:cardBackgroundColor="@color/colorBgWhite"
+                    app:cardBackgroundColor="@color/colorLightLightGrey"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="0dp">
+                    app:cardElevation="0dp"
+                    >
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="?android:attr/selectableItemBackground">
+                        android:background="?android:attr/selectableItemBackground"
+                        >
 
                         <View
                             android:id="@+id/view_search_tran"
@@ -408,7 +409,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="25dp"
             app:cardBackgroundColor="@color/colorLightBlue"
             app:cardCornerRadius="10dp"
             app:cardElevation="0dp">
