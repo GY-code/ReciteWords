@@ -1,0 +1,31 @@
+{
+  "waveHeight": {
+    "max": 40,
+    "min": 0,
+    "tick": 20,
+    "text": "Wave height",
+    "type": "slider",
+    "value": 20
+  },
+  "shininess": {
+    "max": 150,
+    "min": 0,
+    "tick": 10,
+    "text": "Shininess",
+    "type": "slider",
+    "value": 52
+  },
+  "waveSpeed": {
+    "max": 200,
+    "min": 0,
+    "tick": 20,
+    "text": "Wave Speed",
+    "type": "slider",
+    "value": 40
+  },
+  "color": {
+    "text": "Color",
+    "type": "color",
+    "value": "#006697"
+  }
+}

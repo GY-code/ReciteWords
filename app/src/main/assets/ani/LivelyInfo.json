@@ -1,0 +1,14 @@
+{
+  "AppVersion": "0.6.0.0",
+  "Title": "Waves",
+  "Thumbnail": "lively_t.jpg",
+  "Preview": "lively_p.gif",
+  "Desc": "Three.js wave simulation.",
+  "Author": "Teng Bao",
+  "License": "MIT",
+  "Contact": "https://github.com/tengbao/vanta",
+  "Type": 1,
+  "FileName": "waves.html",
+  "Arguments": null,
+  "IsAbsolutePath": false
+}

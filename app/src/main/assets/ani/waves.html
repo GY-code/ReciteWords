@@ -1,0 +1,56 @@
+<script src="js/p5.min.js"></script>
+<script src="js/three.r95.min.js"></script>
+<script src="js/vanta.waves.min.js"></script>
+
+<div id="element" 
+style="  
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;"> 
+</div>
+<!--<div id="element2"> </div>-->
+<script>
+const effect = VANTA.WAVES({
+  el: "#element",
+  mouseControls: false,
+  touchControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  waveHeight: 19.50,
+  //color: fullColorHex(125, 0, 0)
+
+})
+
+function livelyPropertyListener(name, val)
+{
+	if(name =="waveHeight")
+	{
+		effect.setOptions({
+		  waveHeight: val
+		})
+	}
+	else if(name == "shininess")
+	{
+		effect.setOptions({
+		  shininess: val
+		})
+	}
+	else if(name == "waveSpeed")
+	{
+		effect.setOptions({
+		  waveSpeed: val/100
+		})
+	}
+	else if(name =="color")
+	{
+		effect.setOptions({
+		  color: parseInt(val.substring(1),16)
+		})
+	}
+}
+
+</script>
