@@ -11,7 +11,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -33,8 +36,10 @@ import com.bjtu.recitewords.config.ConfigData;
 import com.bjtu.recitewords.config.ConstantData;
 import com.bjtu.recitewords.database.Interpretation;
 import com.bjtu.recitewords.database.MyDate;
+import com.bjtu.recitewords.database.Sentence;
 import com.bjtu.recitewords.database.UserConfig;
 import com.bjtu.recitewords.database.Word;
+import com.bjtu.recitewords.entity.ItemSentence;
 import com.bjtu.recitewords.util.NumberController;
 
 import org.litepal.LitePal;
@@ -49,9 +54,11 @@ public class FragmentWord extends Fragment implements View.OnClickListener {
     private View tranView, tranSearchView;
     private TextView textStart;
     private RelativeLayout layoutFiles;
+    private WebView ani_webview;
 
     private TextView textWord, textMean, textWordNum, textBook;
-
+    private TextView textEnglishMean, textExample;
+    private LinearLayout textLayout;
     private TextView textDate, textMonth;
 
     private static final String TAG = "FragmentWord";
@@ -98,8 +105,12 @@ public class FragmentWord extends Fragment implements View.OnClickListener {
         cardStart = getActivity().findViewById(R.id.card_index_start);
         cardStart.setOnClickListener(this);
         tranView = getActivity().findViewById(R.id.view_main_tran);
+        textLayout=getActivity().findViewById(R.id.textLayout);
+        textLayout.setOnClickListener(this);
         textMean = getActivity().findViewById(R.id.text_main_show_word_mean);
-        textMean.setOnClickListener(this);
+//        textMean.setOnClickListener(this);
+        textEnglishMean=getActivity().findViewById(R.id.text_main_show_english_mean);
+//        textExample=getActivity().findViewById(R.id.text_main_show_example);
         textWord = getActivity().findViewById(R.id.text_main_show_word);
         textWordNum = getActivity().findViewById(R.id.text_main_show_word_num);
         textBook = getActivity().findViewById(R.id.text_main_show_book_name);
@@ -115,6 +126,7 @@ public class FragmentWord extends Fragment implements View.OnClickListener {
         imgFlag = getActivity().findViewById(R.id.img_top_flag);
         imgFlag.setOnClickListener(this);
         tranSearchView = getActivity().findViewById(R.id.view_search_tran);
+        ani_webview = getActivity().findViewById(R.id.ani_webview);
     }
 
     @Override
@@ -159,7 +171,7 @@ public class FragmentWord extends Fragment implements View.OnClickListener {
                         tranView, "mainTrans");
                 startActivity(mIntent, activityOptionsCompat.toBundle());
                 break;
-            case R.id.text_main_show_word_mean:
+            case R.id.textLayout:
                 WordDetailActivity.wordId = currentRandomId;
                 Intent intent = new Intent(getActivity(), WordDetailActivity.class);
                 intent.putExtra(WordDetailActivity.TYPE_NAME, WordDetailActivity.TYPE_GENERAL);
@@ -194,8 +206,9 @@ public class FragmentWord extends Fragment implements View.OnClickListener {
         Log.d(TAG, randomId + "");
         Word word = LitePal.where("wordId = ?", randomId + "").select("wordId", "word").find(Word.class).get(0);
         Log.d(TAG, word.getWord());
-        List<Interpretation> interpretations = LitePal.where("wordId = ?", word.getWordId() + "").find(Interpretation.class);
         textWord.setText(word.getWord());
+
+        List<Interpretation> interpretations = LitePal.where("wordId = ?", word.getWordId() + "").find(Interpretation.class);
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < interpretations.size(); ++i) {
             stringBuilder.append(interpretations.get(i).getWordType() + ". " + interpretations.get(i).getCHSMeaning());
@@ -203,6 +216,25 @@ public class FragmentWord extends Fragment implements View.OnClickListener {
                 stringBuilder.append("\n");
         }
         textMean.setText(stringBuilder.toString());
+
+        stringBuilder = new StringBuilder();
+        for (int i = 0; i < interpretations.size(); ++i) {
+            stringBuilder.append(interpretations.get(i).getWordType() + ". " + interpretations.get(i).getENMeaning());
+//            if (i != interpretations.size() - 1)
+                stringBuilder.append("\n");
+        }
+        if (stringBuilder.toString() != null)
+            textEnglishMean.setText(stringBuilder.toString());
+        /*List<Sentence> sentenceList = LitePal.where("wordId = ?", word.getWordId() + "").find(Sentence.class);
+        stringBuilder = new StringBuilder();
+        for (int i = 0; i < sentenceList.size(); ++i) {
+            stringBuilder.append(sentenceList.get(i).getEnSentence() + "\n");
+            stringBuilder.append(sentenceList.get(i).getChsSentence());
+            if (i != interpretations.size() - 1)
+                stringBuilder.append("\n");
+        }
+        if (stringBuilder.toString() != null)
+            textExample.setText(stringBuilder.toString());*/
     }
 
     @SuppressLint("SetTextI18n")
@@ -257,5 +289,10 @@ public class FragmentWord extends Fragment implements View.OnClickListener {
         if (prepareData == 0)
             // 设置随机数据
             setRandomWord();
+        //设置动画加载html
+        WebSettings webSettings = ani_webview.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        ani_webview.loadUrl("file:///android_asset/ani/waves.html");
+
     }
 }

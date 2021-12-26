@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorLightWhite">
@@ -73,6 +74,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="悦 词"
                 android:textColor="@color/colorBlack"
                 android:textSize="40sp"
@@ -81,7 +83,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="10dp"
                 android:text="移动应用开发技术课程大作业"
                 android:textColor="@color/colorBlack"
                 android:textSize="13sp" />
@@ -162,7 +164,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="5"
+                android:layout_weight="3.5"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
@@ -177,12 +179,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <ImageView
+                        <WebView
+                            android:id="@+id/ani_webview"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:alpha="0.1"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/icon_popo" />
+                            android:layout_height="match_parent"></WebView>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -192,6 +192,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:alpha="0.6"
                                 android:background="@color/colorBgLightBlackTop"
                                 android:gravity="center_vertical"
                                 android:orientation="horizontal"
@@ -219,15 +220,74 @@
 
                             </LinearLayout>
 
-                            <TextView
-                                android:id="@+id/text_main_show_word_mean"
+                            <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="?android:attr/selectableItemBackground"
-                                android:ellipsize="end"
-                                android:padding="20dp"
-                                android:textColor="@color/colorFontWhite"
-                                android:textSize="15sp" />
+                                android:orientation="vertical"
+                                android:id="@+id/textLayout">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginTop="20dp"
+                                    android:ellipsize="end"
+                                    android:padding="10dp"
+                                    android:text="中文释义"
+                                    android:textColor="@color/colorFontWhite"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/text_main_show_word_mean"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:paddingLeft="25sp"
+                                    android:paddingRight="25sp"
+                                    android:textColor="@color/colorFontWhite"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="18dp"
+                                    android:ellipsize="end"
+                                    android:padding="10dp"
+                                    android:text="英文释义"
+                                    android:textColor="@color/colorFontWhite"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/text_main_show_english_mean"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:paddingLeft="25sp"
+                                    android:paddingRight="25sp"
+                                    android:textColor="@color/colorFontWhite"
+                                    android:textSize="15sp" />
+                                <!--<TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="?android:attr/selectableItemBackground"
+                                    android:ellipsize="end"
+                                    android:padding="10dp"
+                                    android:textColor="@color/colorFontWhite"
+                                    android:textSize="20sp"
+                                    android:text="例句"/>
+                                <TextView
+                                    android:id="@+id/text_main_show_example"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:textColor="@color/colorFontWhite"
+                                    android:textSize="15sp"
+                                    android:paddingLeft="25sp"
+                                    android:paddingRight="25sp" />-->
+
+
+                            </LinearLayout>
+
 
                         </LinearLayout>
 
@@ -247,7 +307,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"
+                    android:layout_weight="2.5"
                     app:cardBackgroundColor="@color/colorBgOrange"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="0dp">
