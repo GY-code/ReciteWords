@@ -191,7 +191,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:alpha="0.6"
+                                android:alpha="1"
                                 android:background="@color/colorBgLightBlackTop"
                                 android:gravity="center_vertical"
                                 android:orientation="horizontal"
@@ -223,7 +223,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:orientation="vertical"
-                                android:id="@+id/textLayout">
+                                android:id="@+id/textLayout"
+                                android:alpha="0.8">
 
                                 <TextView
                                     android:layout_width="match_parent"
