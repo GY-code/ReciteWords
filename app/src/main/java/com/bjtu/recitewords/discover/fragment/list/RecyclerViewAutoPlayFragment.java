@@ -2,6 +2,7 @@ package com.bjtu.recitewords.discover.fragment.list;
 
 import static androidx.recyclerview.widget.RecyclerView.SCROLL_STATE_IDLE;
 
+import android.content.pm.ActivityInfo;
 import android.graphics.Rect;
 import android.view.View;
 
@@ -58,5 +59,14 @@ public class RecyclerViewAutoPlayFragment extends RecyclerViewFragment {
             //自动播放第一个
             startPlay(0);
         });
+    }
+    public boolean onBackPressed() {
+        if (mVideoView.isFullScreen()) {
+            mVideoView.stopFullScreen();
+        }
+        if(getActivity().getRequestedOrientation() != ActivityInfo.SCREEN_ORIENTATION_PORTRAIT) {
+            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        }
+        return true;
     }
 }
