@@ -52,35 +52,45 @@ public class DataUtil {
 
     public static List<ArticleBean> getArticleList() {
         List<ArticleBean> articleBeanList = new ArrayList<>();
-        String imgUrl = "https://nimg.ws.126.net/?url=http://open-image.ws.126.net/image/snapshot_movie/2016/11/0/5/98619f1ba84840c3993d1169f3ef5b05.jpg&thumbnail=270x150&quality=95&type=jpg";
 
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
-        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean("https://www.thebeijinger.com/sites/default/files/styles/blog_list_image/public/thebeijinger/blog-images/100/ice_hockey.jpeg",
+                "OlymPicks: Covid Seals the Deal, NHL Says No to Beijing 2022",
+                "The NHL has decided not to send pro players to the 2022 Olympics after a Covid outbreak wreaked havoc on their regular-season schedule."
+                ));
+        articleBeanList.add(new ArticleBean(
+                "https://www.thebeijinger.com/sites/default/files/styles/blog_list_image/public/thebeijinger/blog-images/385889/capture4.png",
+                "Live Music Institution Soi Baochao Closing Down Jan 1, Will Relocate",
+                "Soi Baochao's owners cite noise complaints following COVID-19 as an issue."
+                ));
+        articleBeanList.add(new ArticleBean("https://www.thebeijinger.com/sites/default/files/styles/blog_list_image/public/thebeijinger/blog-images/393403/wang_2.jpg",
+                "Beijing Pops: Singer Leehom Wang Responds to Infidelity Rumors",
+                "Wang's ex-wife shared a lengthy letter on Weibo saying that penning the letter was the hardest decision she's ever had to make."
+                ));
+        articleBeanList.add(new ArticleBean("https://www.thebeijinger.com/sites/default/files/styles/blog_list_image/public/thebeijinger/blog-images/393403/buses_1.jpg",
+                "Make Commuting Easier with this Customizable Bus Route Mini-Program",
+                "This new mini-program seeks to make your daily commute easier with tailored bus route options."
+        ));
+        articleBeanList.add(new ArticleBean("https://www.thebeijinger.com/sites/default/files/styles/blog_list_image/public/thebeijinger/blog-images/385889/skichina.jpg",
+                "Beijing News You Might Have Missed This Week, Dec 18",
+                "Beijing is a happening city! Don't miss a thing with our weekend roundup of the latest news"
+        ));
+        articleBeanList.add(new ArticleBean("https://www.thebeijinger.com/sites/default/files/styles/blog_list_image/public/thebeijinger/blog-images/385889/gungho3.jpg",
+                "Gung Ho! Gears up To Sling Pizza at New Sanyuanqiao Venue",
+                "A new spot up north for good pies."
+        ));
+        articleBeanList.add(new ArticleBean("https://www.thebeijinger.com/sites/default/files/styles/blog_list_image/public/thebeijinger/blog-images/393403/old_people_1.jpg",
+                "China is Encouraging Adults to Consider Moving in with their Parents",
+                "A new plan seeks to answer the question of who will take care of the country's aging population."
+        ));
+        articleBeanList.add(new ArticleBean("https://www.thebeijinger.com/sites/default/files/styles/blog_list_image/public/thebeijinger/blog-images/385889/fireworksstall2_0.jpeg",
+                "Out Without a Bang: With New Ban, Beijing Closes the Door on All CNY Fireworks",
+                "The ban, which will take effect at the start of the New Year, will encompass the entire city"
+        ));
+        articleBeanList.add(new ArticleBean("https://www.thebeijinger.com/sites/default/files/styles/blog_list_image/public/thebeijinger/blog-images/393403/sky_1.jpg",
+                "Four Tips To Avoid Apartment Rental Nightmares in Beijing",
+                "When it comes to finding an apartment, each city has its unique set of quirks, and Beijing is certainly no exception."
+        ));
+
 
 
         return articleBeanList;

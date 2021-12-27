@@ -74,7 +74,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Good Afternoon"
+                android:text="Good Evening"
                 android:textColor="@color/colorBlack"
                 android:textSize="30dp"
                 android:textStyle="bold" />
@@ -234,7 +234,7 @@
                                     android:ellipsize="end"
                                     android:padding="10dp"
                                     android:text="中文释义"
-                                    android:textColor="@color/white"
+                                    android:textColor="#DFDFDF"
                                     android:textSize="20sp" />
 
                                 <TextView
@@ -244,7 +244,7 @@
                                     android:ellipsize="end"
                                     android:paddingLeft="25sp"
                                     android:paddingRight="25sp"
-                                    android:textColor="@color/white"
+                                    android:textColor="#DFDFDF"
                                     android:textSize="15sp" />
 
                                 <TextView
@@ -254,7 +254,7 @@
                                     android:ellipsize="end"
                                     android:padding="10dp"
                                     android:text="英文释义"
-                                    android:textColor="@color/white"
+                                    android:textColor="#DFDFDF"
                                     android:textSize="20sp" />
 
                                 <TextView
@@ -264,7 +264,7 @@
                                     android:ellipsize="end"
                                     android:paddingLeft="25sp"
                                     android:paddingRight="25sp"
-                                    android:textColor="@color/white"
+                                    android:textColor="#DFDFDF"
                                     android:textSize="15sp" />
                                 <!--<TextView
                                     android:layout_width="match_parent"
@@ -422,7 +422,7 @@
                 android:gravity="center"
                 android:paddingTop="17dp"
                 android:paddingBottom="17dp"
-                android:textColor="@color/colorFontInBlue"
+                android:textColor="@color/colorMainFont"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 

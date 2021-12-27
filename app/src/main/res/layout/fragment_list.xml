@@ -35,8 +35,8 @@
         tl:tl_indicator_width="10dp"
         tl:tl_tab_width="55dp"
         tl:tl_textBold="BOTH"
-        tl:tl_textSelectColor="@color/colorBgLightBlack"
-        tl:tl_textUnselectColor="#AEAEAE"
+        tl:tl_textSelectColor="@color/colorBlack"
+        tl:tl_textUnselectColor="@color/colorLightGrey"
         tl:tl_textsize="18sp"
         tl:tl_underline_color="@color/colorLightBlue" />
 

@@ -11,12 +11,10 @@ public class ArticleBean {
 
     }
 
-    public ArticleBean(String imgUrl, String tPrimary,String tSecondary, String tTag, String tPlayAmount) {
+    public ArticleBean(String imgUrl, String tPrimary,String tSecondary) {
         this.imgUrl = imgUrl;
         this.tPrimary = tPrimary;
         this.tSecondary = tSecondary;
-        this.tTag = tTag;
-        this.tPlayAmount = tPlayAmount;
     }
 
     public String getImgUrl() {

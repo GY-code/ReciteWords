@@ -86,7 +86,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="多词匹配"
-                                    android:textColor="@color/white"
+                                    android:textColor="@color/colorFontWhite"
                                     android:textSize="16sp"
                                     android:textStyle="bold" />
 
@@ -95,7 +95,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
                                     android:text="写作"
-                                    android:textColor="@color/white"
+                                    android:textColor="@color/colorFontWhite"
                                     android:textSize="10sp" />
 
                             </LinearLayout>
@@ -141,7 +141,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="单词速过"
-                                    android:textColor="@color/white"
+                                    android:textColor="@color/colorFontWhite"
                                     android:textSize="16sp"
                                     android:textStyle="bold" />
 
@@ -150,7 +150,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
                                     android:text="随身听"
-                                    android:textColor="@color/white"
+                                    android:textColor="@color/colorFontWhite"
                                     android:textSize="10sp" />
 
                             </LinearLayout>

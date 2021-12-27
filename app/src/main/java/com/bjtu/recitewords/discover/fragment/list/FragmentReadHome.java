@@ -1,5 +1,6 @@
 package com.bjtu.recitewords.discover.fragment.list;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.FrameLayout;
 
@@ -14,6 +15,7 @@ import com.bjtu.recitewords.R;
 
 //??
 
+import com.bjtu.recitewords.discover.ReadActivity;
 import com.bjtu.recitewords.discover.adapter.ArticleRecyclerViewAdapter;
 import com.bjtu.recitewords.discover.adapter.listener.OnItemChildClickListener;
 import com.bjtu.recitewords.discover.adapter.listener.OnItemClickListener;
@@ -102,6 +104,11 @@ public class FragmentReadHome extends BaseFragment implements OnItemChildClickLi
     protected void jumpToReadActivity (int position) {
         ArticleBean articleBean = mArticles.get(position);
         //
+        Intent intent = new Intent(getActivity(), ReadActivity.class);
+
+
+
+        startActivity(intent);
     }
 
 }

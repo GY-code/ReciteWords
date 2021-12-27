@@ -45,13 +45,13 @@ public class ArticleRecyclerViewAdapter extends RecyclerView.Adapter<ArticleRecy
 
         Glide.with(holder.mTitleImg.getContext())
                 .load(articleBean.getImgUrl())
-                .placeholder(android.R.color.darker_gray)
+                .placeholder(android.R.color.black)
                 .into(holder.mTitleImg);
 
         holder.mPrimaryTv.setText(articleBean.tPrimary);
         holder.mSecondaryTv.setText(articleBean.tSecondary);
-        holder.mTagTv.setText(articleBean.tTag);
-        holder.playAmountTv.setText(articleBean.tPlayAmount);
+//        holder.mTagTv.setText(articleBean.tTag);
+//        holder.playAmountTv.setText(articleBean.tPlayAmount);
 
     }
 
@@ -81,8 +81,8 @@ public class ArticleRecyclerViewAdapter extends RecyclerView.Adapter<ArticleRecy
             mTitleImg = itemView.findViewById(R.id.title_image);
             mPrimaryTv = itemView.findViewById(R.id.title_primary);
             mSecondaryTv = itemView.findViewById(R.id.title_secondary);
-            mTagTv = itemView.findViewById(R.id.tag_text);
-            playAmountTv = itemView.findViewById(R.id.play_amount);
+//            mTagTv = itemView.findViewById(R.id.tag_text);
+//            playAmountTv = itemView.findViewById(R.id.play_amount);
 
 //            mPlayerContainer = itemView.findViewById(R.id.player_container);
 //            mTitle = itemView.findViewById(R.id.tv_title);

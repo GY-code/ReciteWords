@@ -82,6 +82,7 @@ public class LrcView extends View {
     private boolean isShowTimeline;
     private boolean isTouching;
     private boolean isFling;
+
     /**
      * 歌词显示位置，靠左/居中/靠右
      */
