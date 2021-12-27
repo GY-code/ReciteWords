@@ -162,7 +162,7 @@ public class ChangePlanActivity extends BaseActivity {
                                 UserConfig userConfig1 = new UserConfig();
                                 userConfig1.setLastStartTime(-1);
                                 userConfig1.updateAll("userId = ?", ConfigData.getSinaNumLogged() + "");
-                                Toast.makeText(ChangePlanActivity.this, "" + LitePal.where("userId = ?", ConfigData.getSinaNumLogged() + "").find(UserConfig.class).get(0).getLastStartTime(), Toast.LENGTH_SHORT).show();
+//                                Toast.makeText(ChangePlanActivity.this, "" + LitePal.where("userId = ?", ConfigData.getSinaNumLogged() + "").find(UserConfig.class).get(0).getLastStartTime(), Toast.LENGTH_SHORT).show();
                                 Log.d(TAG, "onClick: " + LitePal.where("userId = ?", ConfigData.getSinaNumLogged() + "").find(UserConfig.class).get(0).getLastStartTime());
                                 // 删除当天打卡记录
                                 Calendar calendar = Calendar.getInstance();
