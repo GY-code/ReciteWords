@@ -8,6 +8,7 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.bjtu.recitewords.discover.bean.ArticleBean;
 import com.bjtu.recitewords.discover.bean.TiktokBean;
 import com.bjtu.recitewords.discover.bean.VideoBean;
 
@@ -48,6 +49,13 @@ public class DataUtil {
 //
 //        return videoList;
 //    }
+
+    public static List<ArticleBean> getArticleList() {
+        List<ArticleBean> articleBeanList = new ArrayList<>();
+        articleBeanList.add(new ArticleBean("1"));
+        return articleBeanList;
+    }
+
 
     public static List<VideoBean> getVideoList() {
         List<VideoBean> videoList = new ArrayList<>();

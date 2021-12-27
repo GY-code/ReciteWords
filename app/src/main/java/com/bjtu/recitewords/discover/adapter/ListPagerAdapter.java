@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import java.util.List;
 
+import com.bjtu.recitewords.discover.fragment.list.FragmentReadHome;
 import com.bjtu.recitewords.discover.fragment.list.RecyclerViewAutoPlayFragment;
 import com.bjtu.recitewords.discover.fragment.list.RecyclerViewFragment;
 
@@ -33,7 +34,7 @@ public class ListPagerAdapter extends FragmentStatePagerAdapter {
             switch (position) {
                 default:
                 case 0:
-                    fragment = new RecyclerViewFragment();
+                    fragment = new FragmentReadHome();
                     break;
                 case 1:
                     fragment = new RecyclerViewAutoPlayFragment();
