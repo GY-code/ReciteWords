@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.bjtu.recitewords.R;
+
 public class ReadActivity extends AppCompatActivity {
 
     @Override
