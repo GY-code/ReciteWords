@@ -16,6 +16,7 @@ import com.bjtu.recitewords.R;
 
 import com.bjtu.recitewords.discover.adapter.ArticleRecyclerViewAdapter;
 import com.bjtu.recitewords.discover.adapter.listener.OnItemChildClickListener;
+import com.bjtu.recitewords.discover.adapter.listener.OnItemClickListener;
 import com.bjtu.recitewords.discover.bean.ArticleBean;
 import com.bjtu.recitewords.discover.fragment.BaseFragment;
 import com.bjtu.recitewords.discover.util.DataUtil;
@@ -23,7 +24,7 @@ import com.bjtu.recitewords.discover.util.DataUtil;
 /**
  * RecyclerView demo
  */
-public class FragmentReadHome extends BaseFragment implements OnItemChildClickListener {
+public class FragmentReadHome extends BaseFragment implements OnItemChildClickListener, OnItemClickListener {
 
     //article 实体list
     protected List<ArticleBean> mArticles = new ArrayList<>();
@@ -63,14 +64,6 @@ public class FragmentReadHome extends BaseFragment implements OnItemChildClickLi
             }
         });
 
-//        View view = findViewById(R.id.add);
-//        view.setVisibility(View.VISIBLE);
-//        view.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                mAdapter.addData(DataUtil.getArticleList());
-//            }
-//        });
     }
 
     protected void initArticleView() {
@@ -98,6 +91,9 @@ public class FragmentReadHome extends BaseFragment implements OnItemChildClickLi
     public void onItemChildClick(int position) {
         jumpToReadActivity(position);
     }
+
+    @Override
+    public void onItemClick(int position) { jumpToReadActivity(position); }
 
     /**
      * 在这里处理点击后的跳转

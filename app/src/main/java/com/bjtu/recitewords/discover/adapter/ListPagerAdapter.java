@@ -34,7 +34,7 @@ public class ListPagerAdapter extends FragmentStatePagerAdapter {
             switch (position) {
                 default:
                 case 0:
-                    fragment = new RecyclerViewFragment();
+                    fragment = new FragmentReadHome();
                     break;
                 case 1:
                     fragment = new RecyclerViewAutoPlayFragment();

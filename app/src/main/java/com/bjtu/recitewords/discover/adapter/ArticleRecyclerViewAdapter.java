@@ -3,14 +3,11 @@ package com.bjtu.recitewords.discover.adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.bumptech.glide.Glide;
 
 import java.util.List;
 
@@ -18,6 +15,7 @@ import com.bjtu.recitewords.R;
 import com.bjtu.recitewords.discover.adapter.listener.OnItemChildClickListener;
 import com.bjtu.recitewords.discover.adapter.listener.OnItemClickListener;
 import com.bjtu.recitewords.discover.bean.ArticleBean;
+import com.bumptech.glide.Glide;
 
 public class ArticleRecyclerViewAdapter extends RecyclerView.Adapter<ArticleRecyclerViewAdapter.ArticleHolder> {
 
@@ -42,15 +40,19 @@ public class ArticleRecyclerViewAdapter extends RecyclerView.Adapter<ArticleRecy
     @Override
     public void onBindViewHolder(@NonNull ArticleHolder holder, int position) {
 
-//        ArticleBean articleBean = articles.get(position);
-//
-//        Glide.with(holder.mThumb.getContext())
-//                .load(articleBean.getThumb())
-//                .placeholder(android.R.color.darker_gray)
-//                .into(holder.mThumb);
-//        holder.mTitle.setText(articleBean.getTitle());
-//
-//        holder.mPosition = position;
+        ArticleBean articleBean = articles.get(position);
+        holder.mPosition = position;
+
+        Glide.with(holder.mTitleImg.getContext())
+                .load(articleBean.getImgUrl())
+                .placeholder(android.R.color.darker_gray)
+                .into(holder.mTitleImg);
+
+        holder.mPrimaryTv.setText(articleBean.tPrimary);
+        holder.mSecondaryTv.setText(articleBean.tSecondary);
+        holder.mTagTv.setText(articleBean.tTag);
+        holder.playAmountTv.setText(articleBean.tPlayAmount);
+
     }
 
     @Override
@@ -67,21 +69,29 @@ public class ArticleRecyclerViewAdapter extends RecyclerView.Adapter<ArticleRecy
 
     public class ArticleHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-//        public int mPosition;
-//        public FrameLayout mPlayerContainer;
-//        public TextView mTitle;
-//        public ImageView mThumb;
-//        public PrepareView mPrepareView;
+        public int mPosition;
+        public ImageView mTitleImg;
+        public TextView mPrimaryTv;
+        public TextView mSecondaryTv;
+        public TextView mTagTv;
+        public TextView playAmountTv;
 
         ArticleHolder(View itemView) {
             super(itemView);
+            mTitleImg = itemView.findViewById(R.id.title_image);
+            mPrimaryTv = itemView.findViewById(R.id.title_primary);
+            mSecondaryTv = itemView.findViewById(R.id.title_secondary);
+            mTagTv = itemView.findViewById(R.id.tag_text);
+            playAmountTv = itemView.findViewById(R.id.play_amount);
+
 //            mPlayerContainer = itemView.findViewById(R.id.player_container);
 //            mTitle = itemView.findViewById(R.id.tv_title);
 //            mPrepareView = itemView.findViewById(R.id.prepare_view);
 //            mThumb = mPrepareView.findViewById(R.id.thumb);
-//            if (mOnItemChildClickListener != null) {
-//                mPlayerContainer.setOnClickListener(this);
-//            }
+            if (mOnItemChildClickListener != null) {
+                mTitleImg.setOnClickListener(this);
+            }
+
             if (mOnItemClickListener != null) {
                 itemView.setOnClickListener(this);
             }
@@ -91,13 +101,13 @@ public class ArticleRecyclerViewAdapter extends RecyclerView.Adapter<ArticleRecy
 
         @Override
         public void onClick(View v) {
-            if (v.getId() == R.id.player_container) {
+            if (v.getId() == R.id.title_image) {
                 if (mOnItemChildClickListener != null) {
-//                    mOnItemChildClickListener.onItemChildClick(mPosition);
+                    mOnItemChildClickListener.onItemChildClick(mPosition);
                 }
             } else {
                 if (mOnItemClickListener != null) {
-//                    mOnItemClickListener.onItemClick(mPosition);
+                    mOnItemClickListener.onItemClick(mPosition);
                 }
             }
 

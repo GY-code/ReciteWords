@@ -109,7 +109,6 @@ public class FragmentMe extends Fragment implements View.OnClickListener {
                 MainActivity.needRefresh = false;
                 MainActivity.lastFragment = 2;
                 FragmentWord.prepareData = 0;
-                MainActivity.lastFragment = 0;
                 getActivity().recreate();
             }
         });

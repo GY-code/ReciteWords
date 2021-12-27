@@ -36,10 +36,8 @@ import com.bjtu.recitewords.config.ConfigData;
 import com.bjtu.recitewords.config.ConstantData;
 import com.bjtu.recitewords.database.Interpretation;
 import com.bjtu.recitewords.database.MyDate;
-import com.bjtu.recitewords.database.Sentence;
 import com.bjtu.recitewords.database.UserConfig;
 import com.bjtu.recitewords.database.Word;
-import com.bjtu.recitewords.entity.ItemSentence;
 import com.bjtu.recitewords.util.NumberController;
 
 import org.litepal.LitePal;
@@ -112,7 +110,7 @@ public class FragmentWord extends Fragment implements View.OnClickListener {
         textEnglishMean=getActivity().findViewById(R.id.text_main_show_english_mean);
 //        textExample=getActivity().findViewById(R.id.text_main_show_example);
         textWord = getActivity().findViewById(R.id.text_main_show_word);
-        textWordNum = getActivity().findViewById(R.id.text_main_show_word_num);
+        textWordNum = getActivity().findViewById(R.id.tag_text);
         textBook = getActivity().findViewById(R.id.text_main_show_book_name);
         textStart = getActivity().findViewById(R.id.text_main_start);
         textStart.setOnClickListener(this);

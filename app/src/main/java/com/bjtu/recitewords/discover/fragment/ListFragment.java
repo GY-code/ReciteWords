@@ -23,7 +23,7 @@ public class ListFragment extends BaseFragment {
     private CommonTabLayout cTabLayout;
 
     private ArrayList<CustomTabEntity> mTabEntities = new ArrayList<>();
-    private String[] mTitles = {"悦读","悦看"};
+    private String[] mTitles = {"悦听","悦看"};
 
     public ViewPager viewPager;
 

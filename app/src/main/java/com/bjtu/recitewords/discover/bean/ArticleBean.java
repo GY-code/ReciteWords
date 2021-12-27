@@ -1,35 +1,61 @@
 package com.bjtu.recitewords.discover.bean;
 
 public class ArticleBean {
-    private String articleId;
-    private String title;
-    private String desc;
+    public String imgUrl;
+    public String tPrimary;
+    public String tSecondary;
+    public String tTag;
+    public String tPlayAmount;
 
-    public ArticleBean(String articleId) {
-        this.articleId = articleId;
+    public ArticleBean(){
+
     }
 
-    public String getArticleId() {
-        return articleId;
+    public ArticleBean(String imgUrl, String tPrimary,String tSecondary, String tTag, String tPlayAmount) {
+        this.imgUrl = imgUrl;
+        this.tPrimary = tPrimary;
+        this.tSecondary = tSecondary;
+        this.tTag = tTag;
+        this.tPlayAmount = tPlayAmount;
     }
 
-    public void setArticleId(String articleId) {
-        this.articleId = articleId;
+    public String getImgUrl() {
+        return imgUrl;
     }
 
-    public String getTitle() {
-        return title;
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public String gettPrimary() {
+        return tPrimary;
     }
 
-    public String getDesc() {
-        return desc;
+    public void settPrimary(String tPrimary) {
+        this.tPrimary = tPrimary;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public String gettSecondary() {
+        return tSecondary;
+    }
+
+    public void settSecondary(String tSecondary) {
+        this.tSecondary = tSecondary;
+    }
+
+    public String gettTag() {
+        return tTag;
+    }
+
+    public void settTag(String tTag) {
+        this.tTag = tTag;
+    }
+
+    public String gettPlayAmount() {
+        return tPlayAmount;
+    }
+
+    public void settPlayAmount(String tPlayAmount) {
+        this.tPlayAmount = tPlayAmount;
     }
 }

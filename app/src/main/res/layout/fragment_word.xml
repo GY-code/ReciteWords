@@ -125,7 +125,7 @@
                     app:cardElevation="0dp">
 
                     <TextView
-                        android:id="@+id/text_main_show_word_num"
+                        android:id="@+id/tag_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingStart="12dp"

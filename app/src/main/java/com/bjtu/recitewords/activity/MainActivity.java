@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
@@ -12,6 +13,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.Navigation;
 
 import com.bjtu.recitewords.discover.adapter.ListPagerAdapter;
 import com.bjtu.recitewords.discover.fragment.list.RecyclerViewAutoPlayFragment;
@@ -38,7 +40,7 @@ public class MainActivity extends BaseActivity {
     public Fragment yueKanFragment;
 
     //用于记录上个选择的Fragment
-    public static int lastFragment = 0;
+    public static int lastFragment;
 
     private BottomNavigationView bottomNavigationView;
 
@@ -76,6 +78,7 @@ public class MainActivity extends BaseActivity {
     // 初始化控件
     private void init() {
         bottomNavigationView = findViewById(R.id.bottom_nav);
+
         linearLayout = findViewById(R.id.linear_frag_container);
     }
 
@@ -100,6 +103,7 @@ public class MainActivity extends BaseActivity {
                 getSupportFragmentManager().beginTransaction().replace(R.id.linear_frag_container, fragMe).show(fragMe).commit();
                 break;
         }
+        System.out.println("acted!!");
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -135,6 +139,7 @@ public class MainActivity extends BaseActivity {
                 return true;
             }
         });
+
     }
 
     private void switchFragment(int lastIndex, int index) {

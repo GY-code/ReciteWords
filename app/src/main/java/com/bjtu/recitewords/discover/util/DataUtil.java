@@ -52,7 +52,37 @@ public class DataUtil {
 
     public static List<ArticleBean> getArticleList() {
         List<ArticleBean> articleBeanList = new ArrayList<>();
-        articleBeanList.add(new ArticleBean("1"));
+        String imgUrl = "https://nimg.ws.126.net/?url=http://open-image.ws.126.net/image/snapshot_movie/2016/11/0/5/98619f1ba84840c3993d1169f3ef5b05.jpg&thumbnail=270x150&quality=95&type=jpg";
+
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+        articleBeanList.add(new ArticleBean(imgUrl,"Title","desc","Ted","322播放"));
+
+
         return articleBeanList;
     }
 
