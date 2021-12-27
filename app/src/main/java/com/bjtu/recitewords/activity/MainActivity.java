@@ -38,7 +38,7 @@ public class MainActivity extends BaseActivity {
     public Fragment yueKanFragment;
 
     //用于记录上个选择的Fragment
-    public static int lastFragment;
+    public static int lastFragment = 0;
 
     private BottomNavigationView bottomNavigationView;
 

@@ -14,7 +14,7 @@ import com.bjtu.recitewords.R;
 
 //??
 
-import com.bjtu.recitewords.discover.adapter.VideoRecyclerViewAdapter;
+import com.bjtu.recitewords.discover.adapter.ArticleRecyclerViewAdapter;
 import com.bjtu.recitewords.discover.adapter.listener.OnItemChildClickListener;
 import com.bjtu.recitewords.discover.bean.ArticleBean;
 import com.bjtu.recitewords.discover.fragment.BaseFragment;
@@ -25,26 +25,14 @@ import com.bjtu.recitewords.discover.util.DataUtil;
  */
 public class FragmentReadHome extends BaseFragment implements OnItemChildClickListener {
 
+    //article 实体list
     protected List<ArticleBean> mArticles = new ArrayList<>();
-    protected VideoRecyclerViewAdapter mAdapter;
+    //内容管理 adapter
+    protected ArticleRecyclerViewAdapter mAdapter;
     protected RecyclerView mRecyclerView;
     protected LinearLayoutManager mLinearLayoutManager;
 
-//    protected VideoView mVideoView;
-//    protected StandardVideoController mController;
-//    protected ErrorView mErrorView;
-//    protected CompleteView mCompleteView;
-//    protected TitleView mTitleView;
-
-    /**
-     * 当前播放的位置
-     */
-//    protected int mCurPos = -1;
-    /**
-     * 上次播放的位置，用于页面切回来之后恢复播放
-     */
-//    protected int mLastPos = mCurPos;
-
+    //设置 fragment布局layout
     @Override
     protected int getLayoutResId() {
         return R.layout.fragment_recycler_view;
@@ -53,30 +41,25 @@ public class FragmentReadHome extends BaseFragment implements OnItemChildClickLi
     @Override
     protected void initView() {
         super.initView();
-
         initArticleView();
-        //保存进度
-//        mVideoView.setProgressManager(new ProgressManagerImpl());
 
         mRecyclerView = findViewById(R.id.rv);
         mLinearLayoutManager = new LinearLayoutManager(getContext());
         mRecyclerView.setLayoutManager(mLinearLayoutManager);
-        mAdapter = new VideoRecyclerViewAdapter(mArticles);
+
+        mAdapter = new ArticleRecyclerViewAdapter(mArticles);
         mAdapter.setOnItemChildClickListener(this);
         mRecyclerView.setAdapter(mAdapter);
+
+
         mRecyclerView.addOnChildAttachStateChangeListener(new RecyclerView.OnChildAttachStateChangeListener() {
             @Override
             public void onChildViewAttachedToWindow(@NonNull View view) {
-
             }
 
             @Override
             public void onChildViewDetachedFromWindow(@NonNull View view) {
-                FrameLayout playerContainer = view.findViewById(R.id.player_container);
-                View v = playerContainer.getChildAt(0);
-                if (v != null && v == mVideoView && !mVideoView.isFullScreen()) {
-                    releaseVideoView();
-                }
+
             }
         });
 
@@ -85,7 +68,7 @@ public class FragmentReadHome extends BaseFragment implements OnItemChildClickLi
 //        view.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//                mAdapter.addData(DataUtil.getVideoList());
+//                mAdapter.addData(DataUtil.getArticleList());
 //            }
 //        });
     }
@@ -94,11 +77,12 @@ public class FragmentReadHome extends BaseFragment implements OnItemChildClickLi
 
     }
 
+    //数据初始化
     @Override
     protected void initData() {
         super.initData();
-        List<ArticleBean> videoList = DataUtil.getVideoList();
-        mArticles.addAll(videoList);
+        List<ArticleBean> articleList = DataUtil.getArticleList();
+        mArticles.addAll(articleList);
         mAdapter.notifyDataSetChanged();
     }
 

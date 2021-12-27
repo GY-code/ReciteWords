@@ -51,6 +51,7 @@
                     android:background="@null"
                     android:hint="输入需要查询的单词"
                     android:maxLines="1"
+                    android:inputType="text"
                     android:textSize="13sp" />
 
             </LinearLayout>
