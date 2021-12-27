@@ -83,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:gravity="center"
-                    android:text="支持的数据内容包括：单词数据、学习记录、打卡记录、铜板数量；但不包括配置信息，例如，是否开启夜间模式，是否开启通知栏背单词等，配置信息默认与当前相同"
+                    android:text="支持的数据内容包括：单词数据、学习记录、打卡记录、铜板数量；"
                     android:textSize="13sp" />
 
             </LinearLayout>
