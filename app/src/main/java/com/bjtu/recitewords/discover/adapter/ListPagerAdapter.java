@@ -44,6 +44,10 @@ public class ListPagerAdapter extends FragmentStatePagerAdapter {
         return fragment;
     }
 
+    public static String makeFragmentName(int viewId, long id){
+        return "android:switcher:" + viewId + ":" + id;
+    }
+
     @Override
     public int getCount() {
         return mTitles.size();

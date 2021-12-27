@@ -25,7 +25,12 @@ public class ListFragment extends BaseFragment {
     private ArrayList<CustomTabEntity> mTabEntities = new ArrayList<>();
     private String[] mTitles = {"悦读","悦看"};
 
-    private ViewPager viewPager;
+    public ViewPager viewPager;
+
+    public ListPagerAdapter getListPagerAdapter() {
+        return listPagerAdapter;
+    }
+
     @Override
     protected int getLayoutResId() {
         return R.layout.fragment_list;

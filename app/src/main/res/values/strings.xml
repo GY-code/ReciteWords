@@ -12,4 +12,5 @@
     <string name="str_portrait_when_fullscreen">全屏后手动横屏</string>
     <string name="str_tiktok">抖音</string>
     <string name="str_seamless_play">无缝播放</string>
+    <string name="lrc_label">暂无歌词</string>
 </resources>

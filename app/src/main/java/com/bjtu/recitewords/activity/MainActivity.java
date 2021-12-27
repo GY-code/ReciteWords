@@ -13,6 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.bjtu.recitewords.discover.adapter.ListPagerAdapter;
+import com.bjtu.recitewords.discover.fragment.list.RecyclerViewAutoPlayFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.bjtu.recitewords.R;
 import com.bjtu.recitewords.activity.index.FragmentMe;
@@ -31,7 +33,9 @@ public class MainActivity extends BaseActivity {
 
     private Fragment fragList;
 
-    private Fragment[] fragments;
+    public Fragment[] fragments;
+
+    public Fragment yueKanFragment;
 
     //用于记录上个选择的Fragment
     public static int lastFragment;
@@ -145,6 +149,16 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void onBackPressed() {
+        if(yueKanFragment == null){
+            yueKanFragment = ((ListFragment) fragList).getListPagerAdapter().mFragments.get(1);
+        }
+
+        if(yueKanFragment != null && yueKanFragment instanceof RecyclerViewAutoPlayFragment
+        && !yueKanFragment.isHidden() && ((RecyclerViewAutoPlayFragment)yueKanFragment).onBackPressed()){
+            System.out.println("blocked!");
+            return;
+        }
+
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         builder.setTitle("提示")
                 .setMessage("今天不再背单词了吗？")
