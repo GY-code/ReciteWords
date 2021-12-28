@@ -94,7 +94,6 @@ class LrcEntry implements Comparable<LrcEntry> {
         return text;
     }
 
-
     void setSecondText(String secondText) {
         this.secondText = secondText;
     }
@@ -114,4 +113,5 @@ class LrcEntry implements Comparable<LrcEntry> {
         }
         return (int) (time - entry.getTime());
     }
+
 }

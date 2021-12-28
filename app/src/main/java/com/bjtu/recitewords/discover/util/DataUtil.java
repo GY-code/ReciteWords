@@ -62,9 +62,9 @@ public class DataUtil {
                 "Live Music Institution Soi Baochao Closing Down Jan 1, Will Relocate",
                 "Soi Baochao's owners cite noise complaints following COVID-19 as an issue."
                 ));
-        articleBeanList.add(new ArticleBean("https://www.thebeijinger.com/sites/default/files/styles/blog_list_image/public/thebeijinger/blog-images/393403/wang_2.jpg",
-                "Beijing Pops: Singer Leehom Wang Responds to Infidelity Rumors",
-                "Wang's ex-wife shared a lengthy letter on Weibo saying that penning the letter was the hardest decision she's ever had to make."
+        articleBeanList.add(new ArticleBean("https://img2.chinadaily.com.cn/images/202112/24/61c4fdf8a310cdd3d822d7d8.jpeg",
+                "Baltics' Russian Media Use Online Humor to Combat Propaganda",
+                "Russia's nationalist propaganda machine kicked into high gear after the 2014 annexation of Crimea sparked the worst East-West tensions since the Cold War."
                 ));
         articleBeanList.add(new ArticleBean("https://www.thebeijinger.com/sites/default/files/styles/blog_list_image/public/thebeijinger/blog-images/393403/buses_1.jpg",
                 "Make Commuting Easier with this Customizable Bus Route Mini-Program",
@@ -90,8 +90,10 @@ public class DataUtil {
                 "Four Tips To Avoid Apartment Rental Nightmares in Beijing",
                 "When it comes to finding an apartment, each city has its unique set of quirks, and Beijing is certainly no exception."
         ));
-
-
+        articleBeanList.add(new ArticleBean("https://www.thebeijinger.com/sites/default/files/styles/blog_list_image/public/thebeijinger/blog-images/385889/subway7.jpg",
+                "Beijing Debuts Metro Fast Pass, But You (Probably) Can't Use it Just Yet",
+                "This pass can get you a minimum of ten pre-paid rides on the subway, but only a select few foreigners can use it for now."
+        ));
 
         return articleBeanList;
     }

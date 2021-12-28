@@ -45,10 +45,10 @@ public class ReadActivity extends BaseActivity {
 
         btnPlayPause = findViewById(R.id.bt_play_pause);
 
-        btnMenu = findViewById(R.id.bt_menu);
-        btnLast = findViewById(R.id.bt_last);
-        btnNext = findViewById(R.id.bt_next);
-        btnShrink = findViewById(R.id.bt_shrink);
+//        btnMenu = findViewById(R.id.bt_menu);
+//        btnLast = findViewById(R.id.bt_last);
+//        btnNext = findViewById(R.id.bt_next);
+//        btnShrink = findViewById(R.id.bt_shrink);
 
         tv_start = findViewById(R.id.tv_start);
         tv_end = findViewById(R.id.tv_end);
@@ -67,11 +67,6 @@ public class ReadActivity extends BaseActivity {
 
                 seekBar.setProgress(0);
             });
-
-            int duration = mediaPlayer.getDuration() / 1000;
-            int position = mediaPlayer.getCurrentPosition();
-            tv_start.setText(calculateTime(position / 1000));
-            tv_end.setText(calculateTime(duration));
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -93,7 +88,7 @@ public class ReadActivity extends BaseActivity {
 
 //        lrcView.setNormalColor(R.color.colorLightBlueN);
 //        lrcView.setCurrentColor(R.color.line_color);
-        lrcView.setTimelineTextColor(R.color.colorGrey);
+//        lrcView.setTimelineTextColor(R.color.colorGrey);
 
         lrcView.setDraggable(true, (view, time) -> {
             mediaPlayer.seekTo((int) time);
@@ -105,7 +100,7 @@ public class ReadActivity extends BaseActivity {
         });
 
         lrcView.setOnTapListener((view, x, y) -> {
-//            Toast.makeText(this, "点击歌词", Toast.LENGTH_SHORT).show();
+
         });
 
         btnPlayPause.setOnClickListener(v -> {
@@ -120,21 +115,21 @@ public class ReadActivity extends BaseActivity {
             }
         });
 
-        btnMenu.setOnClickListener(v -> {
-
-        });
-
-        btnLast.setOnClickListener(v -> {
-
-        });
-
-        btnNext.setOnClickListener(v -> {
-
-        });
-
-        btnShrink.setOnClickListener(v -> {
-
-        });
+//        btnMenu.setOnClickListener(v -> {
+//
+//        });
+//
+//        btnLast.setOnClickListener(v -> {
+//
+//        });
+//
+//        btnNext.setOnClickListener(v -> {
+//
+//        });
+//
+//        btnShrink.setOnClickListener(v -> {
+//
+//        });
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -151,6 +146,9 @@ public class ReadActivity extends BaseActivity {
                 lrcView.updateTime(seekBar.getProgress());
             }
         });
+
+//        handler.post(runnable);
+
     }
 
     private String getLrcText(String fileName) {
@@ -176,6 +174,11 @@ public class ReadActivity extends BaseActivity {
                 lrcView.updateTime(time);
                 seekBar.setProgress((int) time);
             }
+
+            int duration = mediaPlayer.getDuration() / 1000;
+            int position = mediaPlayer.getCurrentPosition();
+            tv_start.setText(calculateTime(position / 1000));
+            tv_end.setText(calculateTime(duration));
 
             handler.postDelayed(this, 300);
         }

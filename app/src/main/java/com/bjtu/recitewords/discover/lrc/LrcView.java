@@ -82,7 +82,6 @@ public class LrcView extends View {
     private boolean isShowTimeline;
     private boolean isTouching;
     private boolean isFling;
-
     /**
      * 歌词显示位置，靠左/居中/靠右
      */
@@ -150,7 +149,7 @@ public class LrcView extends View {
         mTimelineColor = ta.getColor(R.styleable.LrcView_lrcTimelineColor, getResources().getColor(R.color.lrc_timeline_color));
         float timelineHeight = ta.getDimension(R.styleable.LrcView_lrcTimelineHeight, getResources().getDimension(R.dimen.lrc_timeline_height));
         mPlayDrawable = ta.getDrawable(R.styleable.LrcView_lrcPlayDrawable);
-        mPlayDrawable = (mPlayDrawable == null) ? getResources().getDrawable(R.drawable.ic_start) : mPlayDrawable;
+        mPlayDrawable = (mPlayDrawable == null) ? getResources().getDrawable(R.drawable.ic_mplay) : mPlayDrawable;
         mTimeTextColor = ta.getColor(R.styleable.LrcView_lrcTimeTextColor, getResources().getColor(R.color.lrc_time_text_color));
         float timeTextSize = ta.getDimension(R.styleable.LrcView_lrcTimeTextSize, getResources().getDimension(R.dimen.lrc_time_text_size));
         mTextGravity = ta.getInteger(R.styleable.LrcView_lrcTextGravity, LrcEntry.GRAVITY_CENTER);
