@@ -1,25 +1,26 @@
-# recite-words
+# 背单词APP
+![img.png](logo.png#pic_center)
+## 介绍
+完成了登录交互、首页、背单词、复习、资讯、个性化六个功能模块，并尽量考虑界面的美观性。
 
-#### 介绍
-背单词APP
-Android课程大作业
+## 软件架构
+![img.png](软件架构图.png#pic_center)
 
-#### 软件架构
-软件架构说明
+## 技术栈
+![img.png](技术栈.png#pic_center)
+![img.png](后端.png#pic_center)
 
+##项目实现文档
 
-#### 安装教程
+[项目实现文档](doc/项目实现文档.pdf)
 
-1.  下载APK文件
-2.  传输到手机上安装
+## 安装教程
 
-#### 使用说明
+1. Android Studio导入项目
+2. gradle build
+3. run app on devices
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
+## 参与贡献
 
 1.  Fork 本仓库
 2.  新建 Feat_xxx 分支

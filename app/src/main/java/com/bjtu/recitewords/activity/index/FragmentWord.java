@@ -223,16 +223,7 @@ public class FragmentWord extends Fragment implements View.OnClickListener {
         }
         if (stringBuilder.toString() != null)
             textEnglishMean.setText(stringBuilder.toString());
-        /*List<Sentence> sentenceList = LitePal.where("wordId = ?", word.getWordId() + "").find(Sentence.class);
-        stringBuilder = new StringBuilder();
-        for (int i = 0; i < sentenceList.size(); ++i) {
-            stringBuilder.append(sentenceList.get(i).getEnSentence() + "\n");
-            stringBuilder.append(sentenceList.get(i).getChsSentence());
-            if (i != interpretations.size() - 1)
-                stringBuilder.append("\n");
-        }
-        if (stringBuilder.toString() != null)
-            textExample.setText(stringBuilder.toString());*/
+
     }
 
     @SuppressLint("SetTextI18n")

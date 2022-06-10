@@ -260,28 +260,7 @@ public class WelcomeActivity extends BaseActivity implements View.OnClickListene
     }
 
     private void updateServerData() {
-        /*List<User> users = LitePal.where("userId = ?", ConfigData.getSinaNumLogged() + "").find(User.class);
-        RequestBody formBody = new FormBody.Builder()
-                .add(ServerData.LOGIN_SINA_NUM, users.get(0).getUserId()+"")
-                .add(ServerData.LOGIN_SINA_NAME, users.get(0).getUserName())
-                .build();
-        Request request = new Request.Builder()
-                .post(formBody)
-                .url(ServerData.SERVER_LOGIN_ADDRESS)
-                .build();
 
-        OkHttpClient okHttpClient = new OkHttpClient();
-        okHttpClient.newCall(request)
-                .enqueue(new Callback() {
-                    @Override
-                    public void onFailure(Call call, IOException e) {
-                    }
-
-                    @Override
-                    public void onResponse(Call call, Response response) throws IOException {
-
-                    }
-                });*/
     }
 
 }
