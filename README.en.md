@@ -11,7 +11,7 @@ Completed six functional modules of login interaction, home page, word memorizat
 ![img.png](技术栈.png#pic_center)
 ![img.png](后端.png#pic_center)
 
-## 项目实现文档
+## Project Implementation Documentation
 
 [Project Implementation Documentation](doc/项目实现文档.pdf)
 
